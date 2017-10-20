@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Servinf\YoCuidoLoPublico\development\app\libs\jackson-mapper-asl-1.9.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="5206191b35112f50b8e25fcbd3f3b84e12e11cee">
+        <dex dex="C:\Servinf\YoCuidoLoPublico\development\app\build\intermediates\pre-dexed\debug\jackson-mapper-asl-1.9.4_3b679049796d55372bd06d63856a5cf00115476b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Servinf\YoCuidoLoPublico\development\app\libs\jackson-core-asl-1.9.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="8d8b2a3e5bc77ee1be67d060b44ac77d48a27d6e">
+        <dex dex="C:\Servinf\YoCuidoLoPublico\development\app\build\intermediates\pre-dexed\debug\jackson-core-asl-1.9.4_97fa133727335b399cd27057c23caba79f47f41c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Servinf\YoCuidoLoPublico\development\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="C:\Servinf\YoCuidoLoPublico\development\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.1.1_27524cd58af486e0a5a16938a97e1734b132857c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Servinf\YoCuidoLoPublico\development\app\libs\commons-codec-1.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="af3be3f74d25fc5163b54f56a0d394b462dafafd">
+        <dex dex="C:\Servinf\YoCuidoLoPublico\development\app\build\intermediates\pre-dexed\debug\commons-codec-1.8_98d3007f7e6b232ad859231b84d3acd023fbfd27.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Servinf\YoCuidoLoPublico\development\app\build\intermediates\exploded-aar\com.android.volley\volley\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="C:\Servinf\YoCuidoLoPublico\development\app\build\intermediates\pre-dexed\debug\com.android.volley-volley-1.0.0_3726f6f15a6624742fa0fdf765b8db1c59004a17.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andres\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="C:\Servinf\YoCuidoLoPublico\development\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1_50b2d29babaa7d87064d8cda0573f07864a2d4e1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Servinf\YoCuidoLoPublico\development\app\libs\eventbus-2.1.0-beta-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="2366ea893abc1de2c08bc3780206515d1c4fc785">
+        <dex dex="C:\Servinf\YoCuidoLoPublico\development\app\build\intermediates\pre-dexed\debug\eventbus-2.1.0-beta-1_1b7c7ccc8ff4f112853f9d0de701a77c28e5ae4b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Servinf\YoCuidoLoPublico\development\app\libs\androidannotations-api-2.7.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="064169e7aacaaa76f5a0ca5eea66e2fc02737a17">
+        <dex dex="C:\Servinf\YoCuidoLoPublico\development\app\build\intermediates\pre-dexed\debug\androidannotations-api-2.7.1_7304b30ac2b86710e377cb4c9c7f67985b634a3f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Servinf\YoCuidoLoPublico\development\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="C:\Servinf\YoCuidoLoPublico\development\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1_e5e5e6263dff04e312edd38454c38cd8efb79e7c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Servinf\YoCuidoLoPublico\development\app\libs\spring-android-rest-template-1.0.1.RELEASE.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="e132d929bd181941f79b0d63edafb8a86ae6fd33">
+        <dex dex="C:\Servinf\YoCuidoLoPublico\development\app\build\intermediates\pre-dexed\debug\spring-android-rest-template-1.0.1.RELEASE_815441f54884a067e7e33c0b2899127bc616801f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Servinf\YoCuidoLoPublico\development\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.71\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="0f6d5c1ef2e982c3b7858408e3df389cf5d202da">
+        <dex dex="C:\Servinf\YoCuidoLoPublico\development\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-6.1.71_9ffbad057220696ef9695ce7c4fdf91b5591de1e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="C:\Servinf\YoCuidoLoPublico\development\app\build\intermediates\pre-dexed\debug\gson-2.2.4_313aff129984a0a45e086871ec03bfcc02e7284e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Servinf\YoCuidoLoPublico\development\app\libs\spring-android-core-1.0.1.RELEASE.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="e68f0e8e4b636ee30c4de58953be38d9b72a5e3b">
+        <dex dex="C:\Servinf\YoCuidoLoPublico\development\app\build\intermediates\pre-dexed\debug\spring-android-core-1.0.1.RELEASE_8743d7c4805da068ceebe05484aaa094a5c1353d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Servinf\YoCuidoLoPublico\development\app\libs\spring-android-auth-1.0.1.RELEASE.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="f43faebbf90aef324979a81a4f5eee1e3b95191f">
+        <dex dex="C:\Servinf\YoCuidoLoPublico\development\app\build\intermediates\pre-dexed\debug\spring-android-auth-1.0.1.RELEASE_36e71b0d96fa90cd5a1a6cce1d28f55807c9f212.jar" />
+    </item>
+
+</items>
