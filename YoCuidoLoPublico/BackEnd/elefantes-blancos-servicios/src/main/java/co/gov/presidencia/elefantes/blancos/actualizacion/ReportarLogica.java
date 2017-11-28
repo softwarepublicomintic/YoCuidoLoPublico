@@ -45,6 +45,7 @@ public class ReportarLogica {
             for (int i = 0; i <= numeroIntentos; i++) {
                 idImagenGrande = 0;
                 idImagenGrande = GestionImagen.crearRegistroImagen(idElefante, 1);
+                System.out.println("idImagenGrande " +idImagenGrande);
                 if (idImagenGrande != 0) {
                     break;
                 }
@@ -83,9 +84,13 @@ public class ReportarLogica {
             //Boolean existeArchivo = false;
             for (int i = 0; i <= numeroIntentos; i++) {
                 existeArchivo = false;
+                System.out.println("\n  IMG GRANDE input.getImagen() " +input.getImagen()+ " rutaImagenGrande " +rutaImagenGrande);
                 existeArchivo = GestionImagen.crearArchivoImagenGrande(input.getImagen(), rutaImagenGrande);
+                System.out.println("\n  IMG GRANDE existeArchivo" +existeArchivo);
                 if (existeArchivo) {
                     break;
+                }else{
+                	throw new Exception("No se creo la imagen grande en la ruta:*******" + input.getImagen()+" "+rutaImagenGrande);
                 }
             }
 
@@ -113,6 +118,7 @@ public class ReportarLogica {
             for (int i = 0; i <= numeroIntentos; i++) {
                 idImagenPqna = 0;
                 idImagenPqna = GestionImagen.crearRegistroImagen(idElefante, 2);
+                System.out.println("El número idImagenPqna" +idImagenPqna);
                 if (idImagenPqna != 0) {
                     break;
                 }
@@ -121,8 +127,8 @@ public class ReportarLogica {
             if (idImagenPqna == 0) {
                 throw new Exception("No se ha podido crear el registro de la imagen pequeña");
             }
-
-            idImagenPqna = idImagenPqna -1;
+            // Se quito el -1 que le restaba a 	idImagenPqna-1
+            idImagenPqna = idImagenPqna;
             Integer idImagenTemporalPqna = 0;
             for (int i = 0; i <= numeroIntentos; i++) {
                 idImagenTemporalPqna = 0;
@@ -152,6 +158,7 @@ public class ReportarLogica {
 
             existeArchivo = false;
             for (int i = 0; i <= numeroIntentos; i++) {
+            	System.out.println("\n  IMG PQÑ rutaImagenGrande " +rutaImagenGrande+ " rutaImagenPna " +rutaImagenPna);
                 existeArchivo = false;
                 existeArchivo = GestionImagen.crearArchivoImagenPqna(input.getImagen(), rutaImagenGrande, rutaImagenPna);
                 if (existeArchivo) {
@@ -161,7 +168,8 @@ public class ReportarLogica {
                 }
                 
             }
-            /*Logger.getLogger(ReportarLogica.class.getName()).log(Level.SEVERE, "existe file " + idImagenPqna);
+           /* Fin Inicio imagen pequeña */
+            Logger.getLogger(ReportarLogica.class.getName()).log(Level.SEVERE, "existe file " + idImagenPqna);
             if (existeArchivo) {
             	
             	//throw new Exception("No existe la imagene en la ruta :" + rutaImagenPna);
@@ -175,17 +183,20 @@ public class ReportarLogica {
             for (int i = 0; i <= numeroIntentos; i++) {
                 actualizaElefanteImagenPqna = false;
                 actualizaElefanteImagenPqna = updateElefanteImagenPqna(idElefante, idImagenPqna);
+                System.out.println("actualizaElefanteImagenPqna " +actualizaElefanteImagenPqna);
                 if (actualizaElefanteImagenPqna) {
                     break;
+                }else{
+                	throw new Exception("Problemas a actualizar updateElefanteImagenPqna");
                 }
             }
 
             if (!(actualizaElefanteImagenPqna)) {
                 throw new Exception("No se actualizo el elefante con la referencia de la imagen pequeña");
-            }*/
+            }
 
 
-            /*Boolean updateRegistro = false;
+            Boolean updateRegistro = false;
             for (int i = 0; i <= numeroIntentos; i++) {
                 updateRegistro = false;
                 updateRegistro = GestionImagen.updateImagenes(idImagenPqna, idImagenGrande);
@@ -196,8 +207,8 @@ public class ReportarLogica {
 
             if (!(updateRegistro)) {
                 throw new Exception("No se actualizado los registros de la tabla imagenes");
-            }*/
-
+            }
+/* Fin imagenpequeña */
             //.. registrar auditoria..
             Auditoria.registrarAuditoria(1, idElefante, 1, input.getString(), input.getTitulo());
             existeArchivo = null;

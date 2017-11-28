@@ -231,9 +231,10 @@ public class GestionImagen {
         try {
 
             byte[] imageBytes = imagen.getBytes();
-
-            BufferedImage img = new BufferedImage(2048, 1535, BufferedImage.TYPE_INT_RGB);
-            img.createGraphics().drawImage(ImageIO.read(new File(rutaArchivoGrande)).getScaledInstance(2048, 1535, Image.SCALE_SMOOTH), 0, 0, null);
+            //se comento la linea ya que solo la dimension era muy grande y se estaba tomando como  la imgen grande	
+            /*BufferedImage img = new BufferedImage(2048, 1535, BufferedImage.TYPE_INT_RGB);*/
+            BufferedImage img = new BufferedImage(100, 100, BufferedImage.TYPE_INT_RGB);
+            img.createGraphics().drawImage(ImageIO.read(new File(rutaArchivoGrande)).getScaledInstance(100, 100, Image.SCALE_SMOOTH), 0, 0, null);
             ImageIO.write(img, "jpg", new File(ruraArchivoPqna));
 
             return (new File(ruraArchivoPqna).exists());
@@ -246,8 +247,9 @@ public class GestionImagen {
     public static String rutaImagen(Integer idImagen) throws Exception {
         String rutaServidor = null;
         try {
-
+        	System.out.println("IMG idImagen " +idImagen);
             rutaServidor = GestionImagen.rutaRepositorioImagen(idImagen);
+            System.out.println("IMG rutaServidor " +rutaServidor);
 
             File folder = new File(rutaServidor);
             folder.mkdirs();
