@@ -1,0 +1,73 @@
+<!--
+    acerca.html
+    Página con formulario de búsqueda de programas académicos
+ 
+    Proyecto: BuscandoCarrera
+    Paquete: co.gov.mineducacion.BuscandoCarrera
+    Autor: Generated
+    ©2013 - Programa Gobierno en Línea
+-->
+
+<div data-role="page" id="busqueda" data-dom-cache="true">
+	<div data-role="header" class="encabezado_busqueda">
+		<a href="portada.html" data-role="button" data-rel="back" class="atras">Atrás</a>
+		<h1>Buscar<br />Carrera</h1>
+		<a href="#" id="btn_consultar" data-role="button" class="btn_ir">Consulta</a>
+	</div>
+	<div data-role="content">
+		<div class="wrapper overthrow">
+			<p class="texto_mini">
+				Para comenzar su búsqueda ingrese el nombre del programa, o seleccione el área de conocimiento<br /><br />
+				Los campos con asterisco (*) son de carácter obligatorio
+			</p>
+			<input type="text" name="nombre_programa" id="nombre_programa" value="" placeholder="Nombre del programa">
+			<div class="seccion_formulario">
+				<h2 class="titulo_formulario titulo_area_conocimiento"><span>Área de conocimiento</span></h2>
+				<a href="#popupAreaConocimiento" data-role="button" data-inline="true" data-rel="popup" data-position-to="window" data-iconpos="notext" class="btn_agregar">Agregar</a>
+				<span id="titulo_seleccion_area_conocimiento" class="seleccion_titulo"><!-- Valor dinámico --></span>
+				<div data-role="popup" id="popupAreaConocimiento" class="ui-content" data-theme="a" data-overlay-theme="b">
+					<div class="encabezado_detalle">
+						<span class="span_area_conocimiento">Área de conocimiento</span>
+					</div>
+					<fieldset id="lista_area_conocimiento" data-role="controlgroup" data-iconpos="right" data-mini="true">
+					</fieldset>
+				</div>
+			</div>
+			<div class="seccion_formulario">
+				<h2 class="titulo_formulario titulo_nucleo_basico"><span>Núcleo básico de conocimiento</span></h2>
+				<a id="btn_agregar_nucleo_basico" href="#popupNucleoBasico" data-role="button" data-inline="true" data-rel="popup" data-position-to="window" data-iconpos="notext" class="btn_agregar ui-disabled">Agregar</a>
+				<span id="titulo_seleccion_nucleo_basico" class="seleccion_titulo"><!-- Valor dinámico --></span>
+				<div data-role="popup" id="popupNucleoBasico" class="ui-content" data-theme="a" data-overlay-theme="b">
+					<div class="encabezado_detalle">
+						<span class="span_nucleo_basico">Núcleo básico<br /><label id="subtitulo_seleccion_area_conocimiento" class="subtitulo"><!-- Valor dinámico --></label></span>
+					</div>
+					<fieldset id="lista_nucleo_basico" data-role="controlgroup" data-iconpos="right" data-mini="true">
+					</fieldset>
+				</div>
+			</div>
+			<div class="seccion_formulario">
+				<h2 class="titulo_formulario titulo_nivel_formacion"><span>Nivel de formación*</span></h2>
+				<fieldset id="lista_nivel_formacion" data-role="controlgroup" data-mini="true">
+				</fieldset>
+			</div>
+			<div class="seccion_formulario">
+				<h2 class="titulo_formulario titulo_sector"><span>Sector</span></h2>
+				<fieldset id="lista_sector" data-role="controlgroup" data-mini="true">
+				</fieldset>
+			</div>
+			<br />
+			<ul id="autocomplete_municipios" data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Departamento / Municipio"></ul>
+			<ul id="autocomplete_institucion" data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Nombre de la institución"></ul>
+			<div class="seccion_formulario">
+				<h2 class="titulo_formulario titulo_costo"><span>Costo del programa</span></h2>
+				<fieldset id="lista_costo_programa" data-role="controlgroup" data-mini="true" class="seccion_costo">
+					<br />
+				</fieldset>
+			</div>
+			<br /><br /><br /><br /><br />
+		</div>
+	</div>
+	
+	<!-- Invocamos la lógica de aplicación de esta página -->
+	<script type="text/javascript" src="../js/src/busqueda.js"></script>
+</div>

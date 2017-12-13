@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "imagen" : "imag_tutorial1.png",
+ "texto" : "La aplicación móvil Yo Cuido lo Público le permite reportar aquellas obras públicas que considere tienen un impacto negativo para la comunidad; debido a que han sido abandonadas o están inconclusas; consultar los reportes de otros usuarios en Colombia y hacerle seguimiento a sus reportes"
+    },
+    {
+        "id": 2,
+        "imagen" : "imag_tutorial2.png",
+        "texto" : "Para reportar:\r1. Ubíquese frente a la obra que desea reportar.\r2. Revise si esta no ha sido reportada por otro usuario\r3. Si no ha sido reportada, oprima  el botón Reportar para iniciar tomando una foto."
+    },
+    {
+        "id": 3,
+        "imagen" : "imag_tutorial3.png",
+        "texto" : "Luego de tomar la fotografía de la obra que desea reportar,   ingrese la información necesaria para identificarlo. Aquellos campos marcados con asterisco son obligatorios. "
+    },
+    {
+        "id": 4,
+        "imagen" : "imag_tutorial4.png",
+        "texto" : "En caso de encontrarse frente a una obra ya reportada, adjuntar nuevas imagenes de las mismas y/o complementar la información faltante."
+    },
+    {
+        "id": 5,
+        "imagen" : "imag_tutorial5.png",
+        "texto" : "Si desea consultar obras ya reportadas, puede usar las opciones Ver Reportes en Colombia, para consultar todos los reportes del país; y Top 5 de Reportes para ver los reportes más votados por los usuarios de la aplicación."
+    },
+    {
+        "id": 6,
+        "imagen" : "imag_tutorial6.png",
+        "texto" : "Puede hacerle seguimiento a sus reportes a través de la opción Consultar mis Reportes. En esta verá si su reporte fue validado para publicarse, los votos que ha recibido y la información adicional que otros usuarios hayan complementado."
+    }
+]

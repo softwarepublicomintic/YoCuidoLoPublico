@@ -1,0 +1,76 @@
+<!--
+    detalle-carrera.html
+    Página con información detallada del programa académico
+ 
+    Proyecto: BuscandoCarrera
+    Paquete: co.gov.mineducacion.BuscandoCarrera
+    Autor: Generated
+    ©2013 - Programa Gobierno en Línea
+-->
+
+<div data-role="page" id="detalle-carrera">
+	<div data-role="header" data-position="fixed" data-fullscreen="true" data-tap-toggle="false" class="encabezado_detalle">
+		<a href="#" data-role="button" data-rel="back" class="atras">Atrás</a>
+		<h1></h1>
+		<a href="#" data-role="button" data-iconpos="notext" class="btn_favorito">Favorito</a>
+	</div>
+	<div data-role="content">
+		<div class="wrapper overthrow">
+			<ul data-role="listview" id="resultado_detalle_carrera">
+				<li>
+					<h2 id="detalle_carrera_titulo"></h2>
+					<p><span id="detalle_area_conocimiento"></span> / <span id="detalle_nucleo_basico"></span></p>
+				</li>
+				<li><a href="detalle-institucion.html">
+					<p id="detalle_institucion"></p>
+					<p id="detalle_direccion_institucion"></p>
+					<p id="detalle_ciudad_institucion"></p></a>
+				</li>
+				<li>
+					<p>
+						<span>Nivel de Formación</span>:&nbsp;<strong id="detalle_nivel_formacion"></strong><br />
+					</p>
+					<p>
+						<span>Periodicidad</span>:&nbsp;<strong id="detalle_periodicidad"></strong><br />
+					</p>
+					<p>
+						<span>Duración</span>:&nbsp;<strong id="detalle_duracion"></strong><br />
+					</p>
+					<p>
+						<span>Valor promedio matrícula</span>:&nbsp;<strong id="detalle_valor_matricula"></strong><br />
+					</p>
+					<p>
+						<span>Metodología</span>:&nbsp;<strong id="detalle_metodologia"></strong><br />
+					</p>
+					<p>
+						<span>Condición de calidad</span>:&nbsp;<strong id="detalle_condicion"></strong>
+					</p>
+				</li>
+				<li><a id="detalle_id_pruebas_saber" href="detalle-pruebas-saber.html">
+					<h2 class="gray">Pruebas Saber PRO</h2></a>
+				</li>
+				<li>
+					<h2 class="gray">Ingreso laboral</h2>
+					<p>
+						<span>Egresados año anterior</span>:&nbsp;<strong id="detalle_ingreso_ano_anterior"></strong><br />
+					</p>
+					<p>
+						<span>Egresados hace 5 años</span>:&nbsp;<strong id="detalle_ingreso_5_anos"></strong>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span>Nivel de deserción</span>:&nbsp;<strong id="detalle_desercion"></strong><br />
+					</p>
+					<p>
+						<span>Doble titulación</span>:&nbsp;<strong id="detalle_titulacion"></strong></a>
+					</p>
+				</li>
+			</ul>
+			<br /><br /><br /><br />
+		</div>
+	</div>
+	
+	<!-- Invocamos la lógica de aplicación de esta página -->
+	<script type="text/javascript" src="../js/src/detalle-carrera.js"></script>
+</div>

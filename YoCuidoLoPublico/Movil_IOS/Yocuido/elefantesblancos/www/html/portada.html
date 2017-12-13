@@ -1,0 +1,34 @@
+<!--
+    portada.html
+    Página de entrada de la aplicación
+ 
+    Proyecto: BuscandoCarrera
+    Paquete: co.gov.mineducacion.BuscandoCarrera
+    Autor: Generated
+    ©2013 - Programa Gobierno en Línea
+-->
+ 
+<div data-role="page" id="portada">
+    <div data-role="header" data-position="fixed" data-fullscreen="true" data-tap-toggle="false" class="encabezado_home">
+        <div class="logo_buscando_carrera"></div>
+        <h3>Buscando Carrera</h3>
+        <a href="#id_menu" data-rel="popup" id="btn_ir_menu" data-iconpos="notext" class="ui-btn-right ayuda">Acerca de</a>
+        <div data-role="popup" id="id_menu" data-theme="a" data-tolerance="0,0">
+            <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="d">
+                <li data-role="divider" data-theme="b">Acerca de</li>
+            </ul>
+        </div>
+    </div>
+	<div data-role="content">
+		<div class="wrapper">
+            <a id="btn_buscar_carrera"  href="busqueda.html" data-role="button" class="boton_buscar_carrera">Buscar<br />Carrera</a>
+            <a id="btn_favoritos"  href="#" data-role="button" class="boton_buscar_carrera_favorita">Mis Carreras<br />Favoritas</a>
+            <div class="portada_aire"></div>
+            <div class="separador"></div>
+            <div class="footer"></div>
+        </div>
+	</div>	
+	
+	<!-- Invocamos la lógica de aplicación de esta página -->
+	<script type="text/javascript" src="../js/src/portada.js"></script>
+</div>
