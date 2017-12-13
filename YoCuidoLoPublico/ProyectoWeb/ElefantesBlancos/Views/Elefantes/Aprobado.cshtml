@@ -1,0 +1,353 @@
+﻿@model ElefantesBlancosDatos.Models.stra_elefantes
+
+@{
+    ViewBag.Title = "Detalle Elefante Blanco Aprobado";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/aprobadovalidate.js"></script>
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            type: "POST",
+            url: "../Elefantes/GetImage",
+            data: "{}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data) {
+                if (data) {
+                    console.log(data);
+                    $("#slider").ImageSliderControl({
+                        sliderbackgroundimage: data.ImageBig[0].Route,
+                        sliderPrevIdsliderPrevShow: false,
+                        slidernumImages: data.ImageBig.length - 1,
+                        sliderTittle: "",
+                        sliderPrevImage: "url('../Images/estilos_eb/flecha_izquierda_popup.png')",
+                        sliderPrevHoverImage: "url('../Images/estilos_eb/flecha_izquierda_popup.png')",
+                        sliderNextImage: "url('../Images/estilos_eb/flecha_derecha_grande.png')",
+                        sliderNextHoverImage: "url('../Images/estilos_eb/flecha_derecha_grande.png')",
+                        sliderShow: "none",
+                        sliderName: "slider",
+                        sliderImgClose: "url('../Images/estilos_eb/icono_cerrar_ventana.png')",
+                        sliderData: data.ImageBig,
+                        sliderDataShort: data.ImageShort,
+                        sliderImageId: data.ImageBig[0].Id,
+                        sliderIsprincipal: data.ImageBig[0].Isprincipal,
+                        sliderPreviewControlId: "preview-img",
+                        sliderCheckBoxName: "ChkPrincipal",
+                        sliderCameraImg: "../Images/estilos_eb/icono_camara_foto_principal.png",
+                        sliderControllerUpdate: "../Elefantes/UpdateImage"
+                    });
+                }
+
+            }
+        });
+
+    });
+</script>
+
+
+<script>
+    $(function () {
+        if ('@ViewBag.Noesunelefante' == "True") {
+            $("#no_es_un_elefante").prop('disabled', 'disabled');
+            $("#no_es_un_elefante1").prop('disabled', 'disabled');
+
+        }
+
+    });
+
+    function ValidaSoloNumeros() {
+        if ((event.keyCode < 48) || (event.keyCode > 57))
+            event.returnValue = false;
+    }
+
+</script>
+<script>
+    function ValidandoInfo() {
+
+        if (($('#titulo').val() == '') || ($('#entidad_responsable').val() == '') || ($('#id_stra_motivo_elefante').val() == '')) {
+            $("#dialogo-aprobacion").dialog({
+                resizable: false,
+                height: 240,
+                modal: true,
+                buttons: {
+                    "Aceptar": function () {
+                        $(this).dialog("close");
+
+                        return true;
+                    }
+
+                }
+            });
+            return false;
+        }
+        else {
+            ValidandoDatos();
+        }
+    }
+    function ValidandoDatos() {
+        $("#dialog-confirm").dialog({
+            resizable: false,
+            height: 240,
+            modal: true,
+            buttons: {
+                "Aceptar": function () {
+                    $(this).dialog("close");
+
+                    var url = '/Elefantes/Aprobado/'
+                    var varcosto = $("input[name='estado_costo']:checked").val();
+                    var vartiempo = $("input[name='estado_id_rango_tiempo']:checked").val();
+                    var varcontratista = $("input[name='estado_contratista']:checked").val();
+                    var varnoesunelefante = $("input[name='no_es_un_elefante']:checked").val();
+                    $.ajax({
+                        type: "POST",
+                        url: url,
+                        data: {
+                            Id: '@ViewBag.Id', titulo: $('#titulo').val(), entidad: $('#entidad_responsable').val(), motivo: $('#id_stra_motivo_elefante').val(),
+                            tiempo: $('#id_stra_rango_tiempo').val(), costo: $('#costo').val(), contratista: $('#contratista').val(),
+                            estadotiempo: vartiempo, estadocosto: varcosto, estadocontratista: varcontratista, noesunelefante: varnoesunelefante
+                        },
+                        success: function (json) {
+                            if (json.isRedirect) {
+                                window.location.href = json.redirectUrl;
+                            }
+                        }
+
+                    });
+                },
+                Cancelar: function () {
+                    $(this).dialog("close");
+                    return false;
+                }
+            }
+        });
+        return false; //The actual submission of the form happens in the click handler for the delete button
+    }
+</script>
+
+<div class="body_admin">
+    <div class="contenido_body_admin">
+        <div class="contenedor_general">
+            <div class="contenedor2">
+                <div class="titulo_contenedor">Detalle Reporte Validado</div>
+                @using (Html.BeginForm("Aprobado", "Elefantes", FormMethod.Post, new { id = "myForm" }))
+                {
+                    @Html.ValidationSummary(true)
+                    <div class="contenido">
+                        <fieldset>
+                            <legend>stra_elefantes</legend>
+
+                            @Html.HiddenFor(model => model.id_stra_elefante)
+                            <div id="estado_detalle">
+                                <h5>Estado</h5>@ViewBag.Estado
+                            </div>
+                            <div id="encabezado_detalle1">
+                                <h5>Ubicación</h5>@ViewBag.Ubicacion
+                            </div>
+                            <div id="encabezado_detalle2">
+                                <h5>Fecha de creación</h5>@ViewBag.Fecha.ToString("dd/MM/yyyy")
+                            </div>
+                            <div id="encabezado_detalle3">
+                                <h5>Código</h5>@ViewBag.Id
+                            </div>
+                            <div class="columna1">
+                                <div class="info1_elefante">
+                                    <div class="contenido_info">
+                                        <div id="contenido_info1_elefante">
+                                            <h5>*Título Reporte</h5>
+                                            <div class="editor-field">
+                                                @Html.TextAreaFor(model => model.titulo, new {TextBoxMode = "MultiLine", Columns = "55px", Rows = "3px",  style = "width: 250px", @maxlength = "80" })
+                                                <br />
+                                                @Html.ValidationMessageFor(model => model.titulo)
+                                            </div>
+                                        </div>
+                                        <div id="aprobar_o_reprobar">
+                                            Validar / Rechazar
+                                           <div id="aprobar_o_reprobar_radio">
+                                               @Html.RadioButtonFor(m => m.estado_titulo, 1, new { disabled = "disabled", @readonly = "readonly" })
+                                           </div>
+                                            <div id="aprobar_o_reprobar_radio">
+                                                @Html.RadioButtonFor(m => m.estado_titulo, 2, new { disabled = "disabled", @readonly = "readonly" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contenido_info">
+                                        <div id="contenido_info1_elefante">
+                                            <h5>*Entidad Responsable</h5>
+                                            <div class="editor-field">
+                                                @Html.TextAreaFor(model => model.entidad_responsable, new {TextBoxMode = "MultiLine", Columns = "55px", Rows = "3px",  style = "width: 250px", @maxlength = "80" })
+                                                <br />
+                                                @Html.ValidationMessageFor(model => model.entidad_responsable)
+                                            </div>
+                                        </div>
+                                        <div id="aprobar_o_reprobar">
+                                            Validar / Rechazar
+                                             <div class="editor-field">
+                                                 <div id="aprobar_o_reprobar_radio">
+                                                     @Html.RadioButtonFor(m => m.estado_entidad, 1, new { disabled = "disabled", @readonly = "readonly" })
+                                                 </div>
+                                                 <div id="aprobar_o_reprobar_radio">
+                                                     @Html.RadioButtonFor(m => m.estado_entidad, 2, new { disabled = "disabled", @readonly = "readonly" })
+                                                 </div>
+
+                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="contenido_info">
+                                        <div id="contenido_info1_elefante">
+                                            <h5>*Porque es un Reporte</h5>
+                                            <div class="editor-field">
+                                                @Html.DropDownList("id_stra_motivo_elefante",null, new {style="width: 250px;"})
+                                                <br />
+                                                @Html.ValidationMessageFor(model => model.id_stra_motivo_elefante)
+                                            </div>
+                                        </div>
+                                        <div id="aprobar_o_reprobar">
+                                            Validar / Rechazar
+                                            
+                                                 <div id="aprobar_o_reprobar_radio">
+                                                     @Html.RadioButtonFor(m => m.estado_id_motivo_elefante, 1, new { disabled = "disabled", @readonly = "readonly" })
+                                                 </div>
+                                            <div id="aprobar_o_reprobar_radio">
+                                                @Html.RadioButtonFor(m => m.estado_id_motivo_elefante, 2, new { disabled = "disabled", @readonly = "readonly" })
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="contenido_info">
+                                        <h5>&nbsp;</h5>
+                                        <h5>Información Adicional</h5>
+                                    </div>
+                                    <div class="contenido_info">
+                                        <div id="contenido_info1_elefante">
+                                            <h5>Tiempo</h5>
+                                            <div class="editor-field">
+                                                @Html.DropDownList("id_stra_rango_tiempo", String.Empty)
+                                                @Html.ValidationMessageFor(model => model.id_stra_rango_tiempo)
+                                            </div>
+                                        </div>
+                                        <div id="aprobar_o_reprobar">
+                                            Validar / Rechazar
+                                        <div>
+
+                                            <div id="aprobar_o_reprobar_radio">
+                                                @Html.RadioButtonFor(m => m.estado_id_rango_tiempo, 1, new { onClick = "validarestadotiempo()" })
+                                            </div>
+                                            <div id="aprobar_o_reprobar_radio">
+                                                @Html.RadioButtonFor(m => m.estado_id_rango_tiempo, 2, new { onClick = "validarestadotiempo()" })
+                                            </div>
+                                            @Html.HiddenFor(m => m.estado_id_rango_tiempo, new { Id = "Hiddenrangotiempo" })
+
+                                        </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="contenido_info">
+                                        <div id="contenido_info1_elefante">
+                                            <h5>Costo</h5>
+                                            <div class="editor-field">
+                                                @Html.TextBoxFor(model => model.costo, new { onkeypress = "ValidaSoloNumeros()", @maxlength = "18" })
+                                                @Html.ValidationMessageFor(model => model.costo, "El costo debe ser numérico")
+                                            </div>
+                                        </div>
+                                        <div id="aprobar_o_reprobar">
+                                            Validar / Rechazar
+                                             <div class="editor-field">
+
+                                                 <div id="aprobar_o_reprobar_radio">
+                                                     @Html.RadioButtonFor(m => m.estado_costo, 1, new { onClick = "validarestadocosto()" })
+                                                 </div>
+                                                 <div id="aprobar_o_reprobar_radio">
+                                                     @Html.RadioButtonFor(m => m.estado_costo, 2, new { onClick = "validarestadocosto()" })
+                                                 </div>
+
+                                             </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="contenido_info">
+                                        <div id="contenido_info1_elefante">
+                                            <h5>Contratista</h5>
+                                            <div class="editor-field">
+                                                @Html.TextAreaFor(model => model.contratista,  new {TextBoxMode = "MultiLine", Columns = "55px", Rows = "3px",  style = "width: 250px", @maxlength = "80" })
+                                                @Html.ValidationMessageFor(model => model.contratista)
+                                            </div>
+                                        </div>
+                                        <div id="aprobar_o_reprobar">
+                                            Validar / Rechazar
+                                             <div class="editor-field">
+
+                                                 <div id="aprobar_o_reprobar_radio">
+                                                     @Html.RadioButtonFor(m => m.estado_contratista, 1, new { onClick = "validarestadocontratista()" })
+                                                 </div>
+                                                 <div id="aprobar_o_reprobar_radio">
+                                                     @Html.RadioButtonFor(m => m.estado_contratista, 2, new { onClick = "validarestadocontratista()" })
+                                                 </div>
+
+                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columna2">
+                                <div class="foto_elefante_reporte1">
+                                    <h5>Foto principal de este reporte</h5>
+                                    <img src="@Url.Content(ViewBag.ruta)"  width="450"  height="300" />
+                                </div>
+                                <div class="contenido_info">
+                                    <div>
+                                        <h5>Fotos aprobadas relacionadas con este reporte</h5>
+                                        <ul id="preview-img"></ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </fieldset>
+                    </div>
+                    <div id="botones_aprobacion_no_aprobacion">
+                        <div class="editor-field">
+                            ¿Ya no es un reporte?  
+            si @Html.RadioButtonFor(m => m.no_es_un_elefante, true, new { id = "no_es_un_elefante" })
+                            No @Html.RadioButtonFor(m => m.no_es_un_elefante, 2, new { disabled = "disabled", @readonly = "readonly" })
+
+                        </div>
+                        <input type="button" name="Validado" id="Validado" value="Publicar" onclick="return ValidandoInfo()" />
+                    </div>
+                    if ((string)Session["Redireccionar"] == "1")
+                    { @Html.ActionLink("Regresar", "Index", "Home")
+                    }
+                    else
+                    { @Html.ActionLink("Regresar", "ElefantesMap", "Elefantes", new {Id = Session["Redireccionar"] }, null)}
+                }
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="dialog-confirm" title="Mensaje de Confirmación" style="display: none;">
+    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Está seguro que desea modificar la información?</p>
+</div>
+<div id="dialogo-aprobacion" title="Mensaje de Validación" style="display: none;">
+    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>No puede dejar el título, la entidad responsable y/o el porque es un reporte. </p>
+</div>
+
+<div id="dialogo-costo" title="Mensaje de Validación" style="display: none;">
+    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>No puede validar/rechazar el costo porque se encuentra vacío. </p>
+</div>
+
+<div id="dialogo-tiempo" title="Mensaje de Validación" style="display: none;">
+    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>No puede validar/rechazar el rango de tiempo porque se encuentra vacío. </p>
+</div>
+
+<div id="dialogo-contratista" title="Mensaje de Validación" style="display: none;">
+    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>No puede validar/rechazar el contratista porque se encuentra vacío. </p>
+</div>
+<div id="slider"></div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

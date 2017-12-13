@@ -1,0 +1,117 @@
+﻿@model  PagedList.IPagedList<ElefantesBlancosDatos.Models.ElefanteModels>
+
+@using PagedList.Mvc;
+
+<div id="personList">
+     
+    @if (Model.ToList().Count > 0)
+    {
+    <div class="contenido">
+         <table  border="1" width="100%" cellpadding="8" cellspacing="0">
+
+
+            <tr>
+                
+                <th { text-align: center;  vertical-align: middle; width="13%"}><h5>Ver Detalle</h5></th>
+                <th  { text-align: center;  vertical-align: middle; width="10%"}>@Html.ActionLink("Estado", "Busqueda", new { sortOrder = ViewBag.EstadoSortParm, EstadoSelector = ViewBag.EstadoSelector, MunicipioSelector = ViewBag.MunicipioSelector, DepartamentoSelector = ViewBag.DepartamentoSelector, RegionSelector = ViewBag.RegionSelector, ValidadoSelector = ViewBag.ValidadoSelector }, new { @class = "editDialog" })  </th>
+                <th  { align: center;  vertical-align: middle; width="12%"}><h5>Foto</h5></th>
+                <th { text-align: center;  vertical-align: middle; width="13%"}>@Html.ActionLink("Departamento", "Busqueda", new { sortOrder = ViewBag.DepartamentoSortParm, EstadoSelector = ViewBag.EstadoSelector, MunicipioSelector = ViewBag.MunicipioSelector, DepartamentoSelector = ViewBag.DepartamentoSelector, RegionSelector = ViewBag.RegionSelector, ValidadoSelector = ViewBag.ValidadoSelector }, new { @class = "editDialog" })  </th>
+                <th { text-align: center;  vertical-align: middle; width="13%"}>@Html.ActionLink("Municipio", "Busqueda", new { sortOrder = ViewBag.MunicipioSortParm, EstadoSelector = ViewBag.EstadoSelector, MunicipioSelector = ViewBag.MunicipioSelector, DepartamentoSelector = ViewBag.DepartamentoSelector, RegionSelector = ViewBag.RegionSelector, ValidadoSelector = ViewBag.ValidadoSelector }, new { @class = "editDialog" })  </th>
+                <th { text-align: center;  vertical-align: middle; width="15%"}>@Html.ActionLink("Título", "Busqueda", new { sortOrder = ViewBag.TituloSortParm, EstadoSelector = ViewBag.EstadoSelector, MunicipioSelector = ViewBag.MunicipioSelector, DepartamentoSelector = ViewBag.DepartamentoSelector, RegionSelector = ViewBag.RegionSelector, ValidadoSelector = ViewBag.ValidadoSelector }, new { @class = "editDialog" })  </th>
+                <th { text-align: center;  vertical-align: middle; width="8%"}>@Html.ActionLink("Código", "Busqueda", new { sortOrder = ViewBag.CodigoSortParm, EstadoSelector = ViewBag.EstadoSelector, MunicipioSelector = ViewBag.MunicipioSelector, DepartamentoSelector = ViewBag.DepartamentoSelector, RegionSelector = ViewBag.RegionSelector, ValidadoSelector = ViewBag.ValidadoSelector }, new { @class = "editDialog" })  </th>
+                <th { text-align: center;  vertical-align: middle; width="16%"}>@Html.ActionLink("Fecha de Creación", "Busqueda", new { sortOrder = ViewBag.FechaSortParm, EstadoSelector = ViewBag.EstadoSelector, MunicipioSelector = ViewBag.MunicipioSelector, DepartamentoSelector = ViewBag.DepartamentoSelector, RegionSelector = ViewBag.RegionSelector, ValidadoSelector = ViewBag.ValidadoSelector }, new { @class = "editDialog" })  </th>
+             
+            </tr>
+
+
+            @foreach (ElefantesBlancosDatos.Models.ElefanteModels item in Model)
+            { 
+                <tr>
+                    
+                    @if (item.id_stra_estado_elefante == 1)
+                    {
+                        <td { text-align: center;  vertical-align: middle; width="13%"}><a href="~/Elefantes/Edit?Id=@item.id_stra_elefante"><img src="../images/estilos_eb/icono_elefante_pendiente.png" /></a> </td>
+                                        
+                    }
+                    else if ((item.id_stra_estado_elefante == 2) && (item.EsImagen == false) && (item.EsInformacion == false) && (item.no_es_un_elefante == false))
+                    {
+                       <td { text-align: center;  vertical-align: middle; width="13%"}><a href="~/Elefantes/Aprobado?Id=@item.id_stra_elefante"><img src="../images/estilos_eb/icono_elefante.png" /></a> </td>
+                    }
+                    else if ((item.id_stra_estado_elefante == 2) && (item.EsImagen == true) && (item.EsInformacion == false) && (item.no_es_un_elefante == false))
+                    {
+                       <td { text-align: center;  vertical-align: middle; width="13%"}>
+                           <a href="~/Elefantes/Aprobado?Id=@item.id_stra_elefante"><img src="../images/estilos_eb/icono_elefante.png" /></a> 
+                           <a href="../Imagen/Edit?Id=@item.imagenpendiente"><img src="../images/estilos_eb/icono_foto_pendiente.png" /></a>
+                       </td>
+                    }
+                    else if ((item.id_stra_estado_elefante == 2) && (item.EsImagen == false) && (item.EsInformacion == true) && (item.no_es_un_elefante == false))
+                    {
+                       <td { text-align: center;  vertical-align: middle; width="13%"}>
+                           <a href="~/Elefantes/Aprobado?Id=@item.id_stra_elefante"><img src="../images/estilos_eb/icono_elefante.png" /></a> 
+                           <a href="~/Elefantes/Aprobado?Id=@item.id_stra_elefante"><img src="../images/estilos_eb/icono_informacion_pendiente.png" /></a> 
+                       </td>
+                    }
+                    else if ((item.id_stra_estado_elefante == 2) && (item.EsImagen == true) && (item.EsInformacion == true) && (item.no_es_un_elefante == false))
+                    {
+                       <td { text-align: center;  vertical-align: middle; width="13%"}>
+                           <a href="~/Elefantes/Aprobado?Id=@item.id_stra_elefante"><img src="../images/estilos_eb/icono_informacion_pendiente.png" /></a> 
+                           <a href="~/Imagen/Edit?Id=@item.imagenpendiente"><img src="../images/estilos_eb/icono_foto_pendiente.png" /></a>
+                       </td>
+                    }
+                    else if ((item.id_stra_estado_elefante == 2) && (item.EsImagen == false) && (item.EsInformacion == false) && (item.no_es_un_elefante == true))
+                    {
+                       <td { text-align: center;  vertical-align: middle; width="13%"}><a href="~/Elefantes/Aprobado?Id=@item.id_stra_elefante"><img src="../images/estilos_eb/icono_ya_no_es_elefante.png" /></a> 
+                       </td>
+                    }
+                    else if ((item.id_stra_estado_elefante == 2) && (item.EsImagen == false) && (item.EsInformacion == true) && (item.no_es_un_elefante == true))
+                    {
+                       <td { text-align: center;  vertical-align: middle; width="13%"}>
+                            <a href="~/Elefantes/Aprobado?Id=@item.id_stra_elefante"><img src="../images/estilos_eb/icono_ya_no_es_elefante.png" /></a>
+                           <a href="~/Elefantes/Aprobado?Id=@item.id_stra_elefante"><img src="../images/estilos_eb/icono_informacion_pendiente.png" /></a> 
+                       </td>
+                    }
+                    else if ((item.id_stra_estado_elefante == 2) && (item.EsImagen == true) && (item.EsInformacion == false) && (item.no_es_un_elefante == true))
+                    {
+                       <td { text-align: center;  vertical-align: middle; width="13%"}>
+                           <a href="~/Elefantes/Aprobado?Id=@item.id_stra_elefante"><img src="../images/estilos_eb/icono_ya_no_es_elefante.png" /></a>
+                           <a href="~/Imagen/Edit?Id=@item.imagenpendiente"><img src="../images/estilos_eb/icono_foto_pendiente.png" /></a>
+                       </td>
+                    }
+                    else if ((item.id_stra_estado_elefante == 2) && (item.EsImagen == true) && (item.EsInformacion == true) && (item.no_es_un_elefante == true))
+                    {
+                       <td { text-align: center;  vertical-align: middle; width="13%"}>
+                           <a href="~/Elefantes/Aprobado?Id=@item.id_stra_elefante"><img src="../images/estilos_eb/icono_informacion_pendiente.png" /></a> 
+                           <a href="~/Imagen/Edit?Id=@item.imagenpendiente"><img src="../images/estilos_eb/icono_foto_pendiente.png" /></a>
+                       </td>
+                    }
+                    else if (item.id_stra_estado_elefante == 3)
+                    {
+                         <td { text-align: center;  vertical-align: middle; width="13%"}><a href="~/Elefantes/Details?Id=@item.id_stra_elefante"><img src="../images/estilos_eb/icono_elefante_no_aprobado.png" /></a> </td>
+                    }
+                    <td { text-align: center;  vertical-align: middle; width="10%"}>@item.estado</td>
+                    <td {align: center; vertical-align: middle; width="12%"}> 
+                        <img src="@Url.Content(item.ruta)" />                      
+                    </td>
+                    <td { text-align: center;  vertical-align: middle;  width="13%"}>@item.departamento</td>
+                    <td { text-align: center;  vertical-align: middle;  width="13%"}>@item.municipio</td>
+                    <td { text-align: center;  vertical-align: middle;  width="15%"}>@item.titulo</td>
+                    <td { text-align: center;  vertical-align: middle;  width="8%"}>@item.id_stra_elefante</td>
+                    <td { text-align: center;  vertical-align: middle;  width="16%"}>@item.fecha_creacion.ToString("dd/MM/yyyy")</td>
+
+                </tr>
+            }
+
+
+        </table>
+   </div>
+
+         <div id="myPager">
+        @Html.PagedListPager(Model, page => Url.Action("Busqueda", new { page = page, sortOrder = ViewBag.CurrentSort, EstadoSelector = ViewBag.EstadoSelector, MunicipioSelector = ViewBag.MunicipioSelector, DepartamentoSelector = ViewBag.DepartamentoSelector, RegionSelector = ViewBag.RegionSelector, ValidadoSelector = ViewBag.ValidadoSelector }),
+        new PagedListRenderOptions { LinkToFirstPageFormat = "<<", LinkToPreviousPageFormat = "<", LinkToNextPageFormat = ">", LinkToLastPageFormat = ">>", MaximumPageNumbersToDisplay = 7 }) 
+    </div>
+     
+    }
+    else
+    {<p style="color: red">No hay registros.</p>}
+
+</div>

@@ -1,0 +1,115 @@
+6/12/2017 10:09:15 a. m.
+System.FormatException: No se puede reconocer la cadena como valor DateTime válido.
+   en System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   en System.DateTime.Parse(String s)
+   en ElefantesBlancosDatos.LogicaAuditoria.ConsultaAuditoria(String fechaInicio, String fechafinal, String titulo, Int32 UserID, Int32 accion) en D:\OneDrive - Asesoftware S.A.S\Proyectos\Min Tic\Desarrollo\Fuentes\CO_529_DATOS_ABIERTOS_2017\YoCuidoLoPublico\LineaBase\ElefantesBlancosDatos\LogicaAuditoria.cs:línea 55
+   en ElefantesBlancos.Controllers.AuditoriaController.Busqueda(String AccionSelector, String UsuarioSelector, String titulo, String inicio, String final, Nullable`1 page) en D:\OneDrive - Asesoftware S.A.S\Proyectos\Min Tic\Desarrollo\Fuentes\CO_529_DATOS_ABIERTOS_2017\YoCuidoLoPublico\LineaBase\ElefantesBlancos\Controllers\AuditoriaController.cs:línea 109
+   en lambda_method(Closure , ControllerBase , Object[] )
+   en System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   en System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+=========================================
+6/12/2017 10:09:16 a. m.
+System.FormatException: No se puede reconocer la cadena como valor DateTime válido.
+   en System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   en System.DateTime.Parse(String s)
+   en ElefantesBlancosDatos.LogicaAuditoria.ConsultaAuditoria(String fechaInicio, String fechafinal, String titulo, Int32 UserID, Int32 accion) en D:\OneDrive - Asesoftware S.A.S\Proyectos\Min Tic\Desarrollo\Fuentes\CO_529_DATOS_ABIERTOS_2017\YoCuidoLoPublico\LineaBase\ElefantesBlancosDatos\LogicaAuditoria.cs:línea 55
+   en ElefantesBlancos.Controllers.AuditoriaController.Busqueda(String AccionSelector, String UsuarioSelector, String titulo, String inicio, String final, Nullable`1 page) en D:\OneDrive - Asesoftware S.A.S\Proyectos\Min Tic\Desarrollo\Fuentes\CO_529_DATOS_ABIERTOS_2017\YoCuidoLoPublico\LineaBase\ElefantesBlancos\Controllers\AuditoriaController.cs:línea 109
+   en lambda_method(Closure , ControllerBase , Object[] )
+   en System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   en System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+=========================================
+6/12/2017 10:09:16 a. m.
+System.FormatException: No se puede reconocer la cadena como valor DateTime válido.
+   en System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   en System.DateTime.Parse(String s)
+   en ElefantesBlancosDatos.LogicaAuditoria.ConsultaAuditoria(String fechaInicio, String fechafinal, String titulo, Int32 UserID, Int32 accion) en D:\OneDrive - Asesoftware S.A.S\Proyectos\Min Tic\Desarrollo\Fuentes\CO_529_DATOS_ABIERTOS_2017\YoCuidoLoPublico\LineaBase\ElefantesBlancosDatos\LogicaAuditoria.cs:línea 55
+   en ElefantesBlancos.Controllers.AuditoriaController.Busqueda(String AccionSelector, String UsuarioSelector, String titulo, String inicio, String final, Nullable`1 page) en D:\OneDrive - Asesoftware S.A.S\Proyectos\Min Tic\Desarrollo\Fuentes\CO_529_DATOS_ABIERTOS_2017\YoCuidoLoPublico\LineaBase\ElefantesBlancos\Controllers\AuditoriaController.cs:línea 109
+   en lambda_method(Closure , ControllerBase , Object[] )
+   en System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   en System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+=========================================
+6/12/2017 10:09:16 a. m.
+System.FormatException: No se puede reconocer la cadena como valor DateTime válido.
+   en System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   en System.DateTime.Parse(String s)
+   en ElefantesBlancosDatos.LogicaAuditoria.ConsultaAuditoria(String fechaInicio, String fechafinal, String titulo, Int32 UserID, Int32 accion) en D:\OneDrive - Asesoftware S.A.S\Proyectos\Min Tic\Desarrollo\Fuentes\CO_529_DATOS_ABIERTOS_2017\YoCuidoLoPublico\LineaBase\ElefantesBlancosDatos\LogicaAuditoria.cs:línea 55
+   en ElefantesBlancos.Controllers.AuditoriaController.Busqueda(String AccionSelector, String UsuarioSelector, String titulo, String inicio, String final, Nullable`1 page) en D:\OneDrive - Asesoftware S.A.S\Proyectos\Min Tic\Desarrollo\Fuentes\CO_529_DATOS_ABIERTOS_2017\YoCuidoLoPublico\LineaBase\ElefantesBlancos\Controllers\AuditoriaController.cs:línea 109
+   en lambda_method(Closure , ControllerBase , Object[] )
+   en System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   en System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+=========================================
+6/12/2017 10:09:20 a. m.
+System.FormatException: No se puede reconocer la cadena como valor DateTime válido.
+   en System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   en System.DateTime.Parse(String s)
+   en ElefantesBlancosDatos.LogicaAuditoria.ConsultaAuditoria(String fechaInicio, String fechafinal, String titulo, Int32 UserID, Int32 accion) en D:\OneDrive - Asesoftware S.A.S\Proyectos\Min Tic\Desarrollo\Fuentes\CO_529_DATOS_ABIERTOS_2017\YoCuidoLoPublico\LineaBase\ElefantesBlancosDatos\LogicaAuditoria.cs:línea 55
+   en ElefantesBlancos.Controllers.AuditoriaController.Busqueda(String AccionSelector, String UsuarioSelector, String titulo, String inicio, String final, Nullable`1 page) en D:\OneDrive - Asesoftware S.A.S\Proyectos\Min Tic\Desarrollo\Fuentes\CO_529_DATOS_ABIERTOS_2017\YoCuidoLoPublico\LineaBase\ElefantesBlancos\Controllers\AuditoriaController.cs:línea 109
+   en lambda_method(Closure , ControllerBase , Object[] )
+   en System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   en System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   en System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   en System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+=========================================

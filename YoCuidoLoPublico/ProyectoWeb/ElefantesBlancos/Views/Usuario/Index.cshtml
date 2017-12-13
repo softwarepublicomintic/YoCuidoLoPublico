@@ -1,0 +1,94 @@
+﻿@model IEnumerable<ElefantesBlancosDatos.Models.stra_usuarios>
+
+@{
+    ViewBag.Title = "Administrar Usuarios Gestores";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<p></p>
+
+<div class="body_admin">
+    <div class="contenido_body_admin">
+        <div class="contenedor_general">
+            <div class="contenedor1">
+                <div class="titulo_contenedor">Administrar Usuarios</div>
+                <div class="contenido">
+                    <h2>Gestores</h2>
+                    <p>Esta página permite que el Administrador registre nuevos gestores para el módulo administrativo de la aplicación Yo cuido lo público. </p>
+                    <hr />
+                    <h3>Editar Gestores</h3>
+
+                    <table width="100%" border="1" cellpadding="10" cellspacing="0">
+                        <tr>
+                            <th { text-align: center;  vertical-align: middle; width="10%"}>
+                                @Html.DisplayNameFor(model => model.id_stra_usuario)
+                            </th>
+                            <th { text-align: center;  vertical-align: middle; width="30%"}>
+                                @Html.DisplayNameFor(model => model.usuario)
+                            </th>
+
+                            <th { text-align: center;  vertical-align: middle; width="10%"}>
+                               Primer Nombre
+                            </th>
+                            <th { text-align: center;  vertical-align: middle; width="10%"}>
+                                @Html.DisplayNameFor(model => model.segundo_nombre)
+                            </th>
+                            <th { text-align: center;  vertical-align: middle; width="10%"}>
+                                Primer Apellido
+                            </th>
+                            <th { text-align: center;  vertical-align: middle; width="10%"}>
+                                @Html.DisplayNameFor(model => model.segundo_apellido)
+                            </th>
+
+                           <th { text-align: center;  vertical-align: middle; width="10%"}>
+                                Estado
+                            </th>
+                            <th { text-align: center;  vertical-align: middle; width="10%"}>Edición 
+
+                            </th>
+                        </tr>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr class="even">
+                                <td { text-align: center;  vertical-align: middle; width="10%"}>
+                                    @Html.DisplayFor(modelItem => item.id_stra_usuario)
+                                </td>
+                                <td { text-align: center;  vertical-align: middle; width="30%"}>
+                                    @Html.DisplayFor(modelItem => item.usuario)
+                                </td>
+
+                                <td { text-align: center;  vertical-align: middle; width="10%"}>
+                                    @Html.DisplayFor(modelItem => item.nombres)
+                                </td>
+                                <td { text-align: center;  vertical-align: middle; width="10%"}>
+                                    @Html.DisplayFor(modelItem => item.segundo_nombre)
+                                </td>
+                                <td { text-align: center;  vertical-align: middle; width="10%"}>
+                                    @Html.DisplayFor(modelItem => item.apellidos)
+                                </td>
+                                <td { text-align: center;  vertical-align: middle; width="10%"}>
+                                    @Html.DisplayFor(modelItem => item.segundo_apellido)
+                                </td>
+
+
+                                <td { text-align: center;  vertical-align: middle; width="10%"}>
+                                    @Html.DisplayFor(modelItem => item.nombre_estado)
+                                </td>
+                                <td { text-align: center;  vertical-align: middle; width="10%"}>
+                                    @Html.ActionLink("Editar", "Edit", new { id = item.id_stra_usuario })
+                                    @*@Html.ActionLink("Cambiar Contraseña", "CambiarContrasena", new {  id=item.id_stra_usuario })*@
+                                </td>
+                            </tr>
+                        }
+                    </table>
+                   
+                   
+                        <div id="agregar" >@Html.ActionLink("Agregar Gestor", "Create")</div>
+                
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

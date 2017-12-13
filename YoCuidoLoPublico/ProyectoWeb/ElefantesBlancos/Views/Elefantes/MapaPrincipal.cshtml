@@ -1,0 +1,145 @@
+﻿@model ElefantesBlancosDatos.Models.MapaPrincipalModels
+@{
+    ViewBag.Title = "MapaPrincipal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script type="text/javascript">
+    //Crear
+    $.ajaxSetup({ cache: false });
+
+
+    //Editar
+    $(".editDialog").live("click", function (e) {
+        $.getJSON('@Url.Action("ValidarSession")', {}, function (data) {
+            if (data == '0') {
+                window.location.href = '/Account/Login'
+            }
+          
+        });
+        var url = $(this).attr('href');
+        $("#dialog-edit").dialog({
+            title: 'Departamento / Municipio',
+            autoOpen: false,
+            resizable: false,
+            height: 355,
+            width: 548,
+            top: 20,
+            show: { effect: 'drop', direction: "up" },
+            modal: true,
+            draggable: true,
+            open: function (event, ui) {
+                $(this).load(url);
+            },
+            close: function (event, ui) {
+                $(this).dialog('close');
+            }
+        });
+        $("#dialog-edit").dialog('open');
+        return false;
+    });
+</script>
+
+
+<div class="body_admin">
+    <div class="contenido_body_admin">
+        <div class="contenedor_general">
+            <div class="contenedor4">
+                <div class="titulo_contenedor3">Pendientes</div>
+                <div class="contenido3">
+                    <div id="aprobado1">
+                        <div id="valor_pendiente">@Html.ActionLink(Model.Pendiete, "MapaPorEstado", new { Id = 2 }, new { @class = "editDialog1" })</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor3">
+                <div class="titulo_contenedor2">Validados Pendientes de Fotos e Información</div>
+                <div class="contenido2">
+                    <div id="aprobado2">
+                        <div id="valor_pendiente">@Html.ActionLink(Model.Imagenes, "MapaPorEstado", new { Id = 3 }, new { @class = "editDialog1" })</div>
+
+                    </div>
+                    <div id="aprobado3">
+                        <div id="valor_pendiente">@Html.ActionLink(Model.NuevaInformacion, "MapaPorEstado", new { Id = 4 }, new { @class = "editDialog1" })</div>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor4">
+                <div class="titulo_contenedor3">Validados</div>
+                <div class="contenido3">
+                    <div id="aprobado4">
+
+                        <div id="valor_pendiente">@Html.ActionLink(Model.Validados, "MapaPorEstado", new { Id = 1 }, new { @class = "editDialog1" })</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor1">
+              
+                <div class="titulo_contenedor">Reportes en Colombia</div>
+                <div class="mapa_colombia">
+                    @if ((Model.InsularPendiente != "0") || (Model.InsularImagen != "0") || (Model.InsularInformacion != "0") || (Model.InsularValidados != "0"))
+                    {
+                        <div id="insular_total">
+                            <div id="pendientes_insular"> @Html.ActionLink(Model.InsularPendiente, "ConsultaDepartamento", new { Id = 6 }, new { @class = "editDialog" })</div>
+                            <div id="fotos_insular">@Html.ActionLink(Model.InsularImagen, "ConsultaDepartamento", new { Id = 6 }, new { @class = "editDialog" })</div>
+                            <div id="info_insular">@Html.ActionLink(Model.InsularInformacion, "ConsultaDepartamento", new { Id = 6 }, new { @class = "editDialog" })</div>
+                            <div id="validados_insular">@Html.ActionLink(Model.InsularValidados, "ConsultaDepartamento", new { Id = 6 }, new { @class = "editDialog" })</div>
+                        </div>
+                    }
+                    @if ((Model.AtlanticaPendiente != "0") || (Model.AtlanticaImagen != "0") || (Model.AtlanticaInformacion != "0") || (Model.AtlanticaValidados != "0"))
+                    {
+                        <div id="caribe_total">
+                            <div id="pendientes_caribe">@Html.ActionLink(Model.AtlanticaPendiente, "ConsultaDepartamento", new { Id = 1 }, new { @class = "editDialog" })</div>
+                            <div id="fotos_caribe">@Html.ActionLink(Model.AtlanticaImagen, "ConsultaDepartamento", new { Id = 1 }, new { @class = "editDialog" })</div>
+                            <div id="info_caribe">@Html.ActionLink(Model.AtlanticaInformacion, "ConsultaDepartamento", new { Id = 1 }, new { @class = "editDialog" })</div>
+                            <div id="validados_caribe">@Html.ActionLink(Model.AtlanticaValidados, "ConsultaDepartamento", new { Id = 1 }, new { @class = "editDialog" })</div>
+                        </div>
+                    }
+                    @if ((Model.AndinaPendiente != "0") || (Model.AndinaImagen != "0") || (Model.AndinaInformacion != "0") || (Model.AndinaValidados != "0"))
+                    {
+                        <div id="andina_total">
+                            <div id="pendientes_andina">@Html.ActionLink(Model.AndinaPendiente, "ConsultaDepartamento", new { Id = 2 }, new { @class = "editDialog" })</div>
+                            <div id="fotos_andina">@Html.ActionLink(Model.AndinaImagen, "ConsultaDepartamento", new { Id = 2 }, new { @class = "editDialog" })</div>
+                            <div id="info_andina">@Html.ActionLink(Model.AndinaInformacion, "ConsultaDepartamento", new { Id = 2 }, new { @class = "editDialog" })</div>
+                            <div id="validados_andina">@Html.ActionLink(Model.AndinaValidados, "ConsultaDepartamento", new { Id = 2 }, new { @class = "editDialog" })</div>
+                        </div>
+                    }
+                    @if ((Model.PacificaPendiente != "0") || (Model.PacificaImagen != "0") || (Model.PacificaInformacion != "0") || (Model.PacificaValidados != "0"))
+                    {
+                        <div id="pacifica_total">
+                            <div id="pendientes_pacifica">@Html.ActionLink(Model.PacificaPendiente, "ConsultaDepartamento", new { Id = 3 }, new { @class = "editDialog" })</div>
+                            <div id="fotos_pacifica">@Html.ActionLink(Model.PacificaImagen, "ConsultaDepartamento", new { Id = 3 }, new { @class = "editDialog" })</div>
+                            <div id="info_pacifica">@Html.ActionLink(Model.PacificaInformacion, "ConsultaDepartamento", new { Id = 3 }, new { @class = "editDialog" })</div>
+                            <div id="validados_pacifica">@Html.ActionLink(Model.PacificaValidados, "ConsultaDepartamento", new { Id = 3 }, new { @class = "editDialog" })</div>
+                        </div>
+                    }
+                    @if ((Model.OrinoquiaPendiente != "0") || (Model.OrinoquiaImagen != "0") || (Model.OrinoquiaInformacion != "0") || (Model.OrinoquiaValidados != "0"))
+                    {
+                        <div id="orinoquia_total">
+                            <div id="pendientes_orinoquia">@Html.ActionLink(Model.OrinoquiaPendiente, "ConsultaDepartamento", new { Id = 4 }, new { @class = "editDialog" })</div>
+                            <div id="fotos_orinoquia">@Html.ActionLink(Model.OrinoquiaImagen, "ConsultaDepartamento", new { Id = 4 }, new { @class = "editDialog" })</div>
+                            <div id="info_orinoquia">@Html.ActionLink(Model.OrinoquiaInformacion, "ConsultaDepartamento", new { Id = 4 }, new { @class = "editDialog" })</div>
+                            <div id="validados_orinoquia">@Html.ActionLink(Model.OrinoquiaValidados, "ConsultaDepartamento", new { Id = 4 }, new { @class = "editDialog" })</div>
+                        </div>
+                    }
+                    @if ((Model.AmazoniaPendiente != "0") || (Model.AmazoniaImagen != "0") || (Model.AmazoniaInformacion != "0") || (Model.AmazoniaValidados != "0"))
+                    {
+                        <div id="amazonia_total">
+                            <div id="pendientes_amazonia">@Html.ActionLink(Model.AmazoniaPendiente, "ConsultaDepartamento", new { Id = 5 }, new { @class = "editDialog" })</div>
+                            <div id="fotos_amazonia">@Html.ActionLink(Model.AmazoniaImagen, "ConsultaDepartamento", new { Id = 5 }, new { @class = "editDialog" })</div>
+                            <div id="info_amazonia">@Html.ActionLink(Model.AmazoniaInformacion, "ConsultaDepartamento", new { Id = 5 }, new { @class = "editDialog" })</div>
+                            <div id="validados_amazonia">@Html.ActionLink(Model.AmazoniaValidados, "ConsultaDepartamento", new { Id = 5 }, new { @class = "editDialog" })</div>
+                        </div>
+                    }
+
+                </div>
+                  
+                <div id="dialog-edit" style="display: none"></div>
+              
+                <div id="boton6">  @Html.ActionLink("Exportar", "ExportarMapaPrincipal", "Elefantes")</div>
+            </div>
+        </div>
+    </div>
+</div>

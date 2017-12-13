@@ -1,0 +1,156 @@
+﻿@model ElefantesBlancosDatos.Models.stra_usuarios
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    
+    <div class="body_admin">
+        <div class="contenido_body_admin">
+            <div class="contenedor_general">
+                <div class="contenedor1">
+                    <div class="titulo_contenedor">Administrar Usuarios</div>
+                    <div class="contenido">
+                        <h2>Gestores</h2>
+                        <p>Esta página permite que el Administrador registre nuevos gestores para el modulo administrativo de la aplicación Yo cuido lo público. Los campos con <strong>* </strong>son de carácter obligatorio</p>
+                        <hr />
+                        <h3>Crear un nuevo Gestor</h3>
+                        <fieldset>
+                            <legend>stra_usuarios</legend>
+                            <div class="editor-field" hidden="hidden">
+                                @Html.EditorFor(model => model.id_stra_usuario)
+                                @Html.ValidationMessageFor(model => model.id_stra_usuario)
+                            </div>
+
+                            <div class="editor-field" hidden="hidden">
+                                @Html.EditorFor(model => model.estado)
+                                @Html.ValidationMessageFor(model => model.estado)
+                            </div>
+
+
+                            <table width="100%" border="0" cellpadding="0" cellspacing="15">
+                                <tr>
+                                    <td>
+                                        <h4><strong></strong> @Html.LabelFor(model => model.nombres)</h4>
+                                    </td>
+                                    <td>
+                                        <h4>@Html.LabelFor(model => model.segundo_nombre) </h4>
+                                    </td>
+                                    <td>
+                                        <h4><strong></strong> @Html.LabelFor(model => model.apellidos) </h4>
+                                    </td>
+                                    <td>
+                                        <h4>@Html.LabelFor(model => model.segundo_apellido)</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="editor-field">
+                                            @Html.TextBoxFor(model => model.nombres, new { @class = "campo_texto", @maxlength = "40" })
+                                          
+                                        </div>
+                                  
+                                    </td>
+                                    <td>
+                                        <div class="editor-field">
+                                            @Html.TextBoxFor(model => model.segundo_nombre, new { @class = "campo_texto",  @maxlength = "40" })
+                                            @Html.ValidationMessageFor(model => model.segundo_nombre)
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="editor-field">
+                                            @Html.TextBoxFor(model => model.apellidos, new { @class = "campo_texto",  @maxlength = "40" })
+                                       
+                                        </div>
+
+                                    </td>
+                                    <td>
+                                        <div class="editor-field">
+                                            @Html.TextBoxFor(model => model.segundo_apellido, new { @class = "campo_texto",  @maxlength = "40" })
+                                            @Html.ValidationMessageFor(model => model.segundo_apellido)
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4><strong> </strong>@Html.LabelFor(model => model.cargo)</h4>
+                                    </td>
+                                    <td colspan="3">
+                                        <h4><strong></strong> @Html.LabelFor(model => model.correo_electronico) </h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="editor-field">
+                                            @Html.TextBoxFor(model => model.cargo, new { @class = "campo_texto",  @maxlength = "40" })
+                                         
+                                        </div>
+
+                                    </td>
+                                    <td colspan="3">
+                                        <div class="editor-field">
+                                            <div class="campo_texto">
+                                                <div hidden="hidden">@Html.EditorFor(model => model.correo_electronico)</div>
+                                                @Html.DisplayTextFor(model => model.correo_electronico)
+                                           
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>Estado:</h4>
+                                    </td>
+                                    <td colspan="3">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>
+
+                                        <div class="styled-select">
+                                            <div class="editor-field">
+                                                @Html.DropDownList("selectEstado", (SelectList)ViewBag.lista)
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td colspan="3">&nbsp;</td>
+                                </tr>
+                            </table>
+                            <p>
+                                <input  type="submit" value="Guardar" />
+                            </p>
+                          
+                           
+                         <div>
+                              <br />
+                                @Html.ValidationMessageFor(model => model.nombres)
+                                   <br />
+                                @Html.ValidationMessageFor(model => model.apellidos)
+                                      <br />
+                                @Html.ValidationMessageFor(model => model.correo_electronico)
+                                      <br />
+                                @Html.ValidationMessageFor(model => model.cargo)
+                            
+                            </div>
+                          
+                            @Html.ActionLink("Regresar", "Index")
+                        </fieldset>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>  
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

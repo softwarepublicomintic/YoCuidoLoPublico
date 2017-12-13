@@ -1,0 +1,455 @@
+﻿@model  PagedList.IPagedList<ElefantesBlancosDatos.Models.ElefanteModels>
+@{
+    ViewBag.Title = "ElefantesMap";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<script>
+    $(document).ready(function () {
+        if ('@ViewBag.EstadoSelector' == '2') {
+            $('#ValidadoSelector').show();
+        }
+        else {
+            $('#ValidadoSelector').hide();
+        }
+    });
+</script>
+<script type="text/javascript">
+    //Departamento
+    $('#DepartamentoSelector').click();
+    $(document).ready(function () {
+        var selectedDep = $('#DepartamentoSelector').val();
+        if (selectedDep != null && selectedDep != '') {
+            $.getJSON('@Url.Action("GetMunicipio")', { departamento: selectedDep }, function (data) {
+                var items = '';
+                $.each(data, function (i, municipio) {
+                    items += "<option value='" + municipio.value + "'>" + municipio.text + "</option>";
+
+                });
+                $('#MunicipioSelector').empty();
+                $('#MunicipioSelector').html(items);
+                $('#MunicipioSelector').click();
+                $('#MunicipioSelector').val('@ViewBag.MunicipioSelector');
+
+            });
+
+        }
+        $('#DepartamentoSelector').change(function () {
+            var selectedDep = $(this).val();
+            //Cargo nuevamente los departamentos si selecciona el departamento 0
+            if (selectedDep == '0') {
+                $.getJSON('@Url.Action("GetDepartamentoTodos")', { departamento: selectedDep }, function (data) {
+                    var items = '';
+                    $.each(data, function (i, departamento) {
+                        items += "<option value='" + departamento.value + "'>" + departamento.text + "</option>";
+
+                    });
+
+                    $('#DepartamentoSelector').empty();
+                    $('#DepartamentoSelector').html(items);
+                    $('#DepartamentoSelector').click();
+                    $('#DepartamentoSelector').val(selectedDep);
+                    $('#MunicipioSelector').val('@ViewBag.MunicipioSelector');
+
+                });
+            }
+
+            if (selectedDep != null && selectedDep != '') {
+                $.getJSON('@Url.Action("GetMunicipio")', { departamento: selectedDep }, function (data) {
+                    var items = '';
+                    $.each(data, function (i, municipio) {
+                        items += "<option value='" + municipio.value + "'>" + municipio.text + "</option>";
+
+                    });
+
+                    $('#MunicipioSelector').empty();
+                    $('#MunicipioSelector').html(items);
+                    $('#MunicipioSelector').click();
+                    $('#MunicipioSelector').val('@ViewBag.MunicipioSelector');
+                });
+
+
+                $.getJSON('@Url.Action("GetRegion")', { departamento: selectedDep }, function (data) {
+                    var items = '';
+                    $('#RegionSelector').val(data);
+                    $('#MunicipioSelector').val('0');
+                    $('#DepartamentoSelector').val(selectedDep);
+                });
+
+
+            }
+        });
+
+    });
+
+    //Regiones
+    $('#RegionSelector').click();
+    $(document).ready(function () {
+        var selectedRegion = $('#RegionSelector').val();
+        if (selectedRegion != null && selectedRegion != '') {
+            $.getJSON('@Url.Action("GetDepartamentoPorRegion")', { region: selectedRegion }, function (data) {
+                var items = '';
+                $.each(data, function (i, departamento) {
+                    if (departamento.value == '@ViewBag.DepartamentoSelector') {
+                        items += "<option selected=\"selected\" value='" + departamento.value + "'>" + departamento.text + "</option>";
+                    }
+                    else {
+                        items += "<option value='" + departamento.value + "'>" + departamento.text + "</option>";
+                    }
+
+                });
+                $('#DepartamentoSelector').empty();
+                $('#DepartamentoSelector').html(items);
+                $('#DepartamentoSelector').click();
+                $('#DepartamentoSelector').val('@ViewBag.DepartamentoSelector');
+                $('#MunicipioSelector').val('@ViewBag.MunicipioSelector');
+            });
+
+
+        }
+        $('#RegionSelector').change(function () {
+            var selectedRegion = $(this).val();
+            if (selectedRegion != null && selectedRegion != '') {
+                $.getJSON('@Url.Action("GetDepartamentoPorRegion")', { region: selectedRegion }, function (data) {
+                    var items = '';
+                    $.each(data, function (i, departamento) {
+                        items += "<option value='" + departamento.value + "'>" + departamento.text + "</option>";
+                    });
+                    $('#DepartamentoSelector').empty();
+                    $('#DepartamentoSelector').html(items);
+                    $('#DepartamentoSelector').click();
+                    $('#DepartamentoSelector').val('@ViewBag.DepartamentoSelector');
+                });
+
+
+                $.getJSON('@Url.Action("GetMunicipioPorRegion")', { region: selectedRegion }, function (data) {
+                    var items = '';
+                    $.each(data, function (i, municipio) {
+                        items += "<option value='" + municipio.value + "'>" + municipio.text + "</option>";
+                    });
+                    $('#MunicipioSelector').empty();
+                    $('#MunicipioSelector').html(items);
+                    $('#MunicipioSelector').click();
+                    $('#MunicipioSelector').val('@ViewBag.MunicipioSelector');
+                });
+            }
+        });
+
+    });
+
+
+    //Municipio
+    $('#MunicipioSelector').click();
+    $(document).ready(function () {
+        var selectedMun = $('#MunicipioSelector').val();
+
+        $('#MunicipioSelector').change(function () {
+            var selectedMun = $(this).val();
+            if (selectedMun != null && selectedMun != '') {
+                $.getJSON('@Url.Action("GetRegionPorMunicipio")', { municipio: selectedMun }, function (data) {
+                    $('#RegionSelector').val(data);
+
+                });
+
+
+
+                $.getJSON('@Url.Action("GetMunicipioPorMunicipio")', { municipio: selectedMun }, function (data) {
+                    var items = '';
+                    $.each(data, function (i, municipio) {
+                        items += "<option value='" + municipio.value + "'>" + municipio.text + "</option>";
+                    });
+                    $('#MunicipioSelector').empty();
+                    $('#MunicipioSelector').html(items);
+                    $('#MunicipioSelector').click();
+                    $('#MunicipioSelector').val(selectedMun);
+                });
+
+                if (selectedMun == '0') {
+                    $.getJSON('@Url.Action("GetDepartamentoTodos")', { departamento: 0 }, function (data) {
+                        var items = '';
+                        $.each(data, function (i, departamento) {
+                            items += "<option value='" + departamento.value + "'>" + departamento.text + "</option>";
+
+                        });
+
+                        $('#DepartamentoSelector').empty();
+                        $('#DepartamentoSelector').html(items);
+                        $('#DepartamentoSelector').click();
+                        $('#DepartamentoSelector').val('0');
+
+
+                    });
+                }
+                else {
+                    $.getJSON('@Url.Action("GetDepartamentoPorMunicipio")', { municipio: selectedMun }, function (data) {
+                        $('#DepartamentoSelector').val(data);
+
+                    });
+                }
+            }
+
+
+        });
+
+    });
+
+
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        $('#EstadoSelector').change(function () {
+            var varValidado = $(this).val();
+            if (varValidado == '2') {
+                $('#ValidadoSelector').show();
+            }
+            else {
+                $('#ValidadoSelector').hide();
+            }
+        });
+    });
+</script>
+
+@*<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>*@
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCT3C6iC-3N1qlsUNlWfWRn4erypQ8Dbl0"
+        async defer></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        initialize();
+        Datos();
+    });
+    function validarsession() {
+
+        $.getJSON('@Url.Action("ValidarSession")', {}, function (data) {
+             if (data == '0') {
+                 window.location.href = '/Account/Login'
+             }
+             else {
+                 ValidandoInfo()
+             }
+
+         });
+
+     }
+    function ValidandoInfo() {
+
+        if (($('#MunicipioSelector').val() == '') || ($('#MunicipioSelector').val() == '0')) {
+            $("#dialogo-aprobacion").dialog({
+                resizable: false,
+                height: 240,
+                modal: true,
+                buttons: {
+                    "Aceptar": function () {
+                        $(this).dialog("close");
+
+                        return true;
+                    }
+
+                }
+            });
+            return false;
+        }
+        else {
+            initialize();
+            Datos();
+        }
+    }
+
+    function Datos() {
+        var varmunicipio = $('#MunicipioSelector').val();
+        $.ajax({
+            url: '@Url.Action("InformacionMunicipio")',
+            type: 'GET',
+            cache: false,
+            data: {
+                Id: varmunicipio
+            }
+        }).done(function (result) {
+            $('#container').html(result);
+        });
+    }
+
+    function dominio_base() {
+        // capturamos la url
+        url_site = document.location.href
+
+        // La separamos por la doble barra
+        url_pos = url_site.indexOf('//');
+
+        // por un lado tenemos la url sin protocolos
+        url_limpia = url_site.substr(url_pos + 2);
+
+        // y por otro lado el protocolo usado
+        url_prot = url_site.substr(0, url_pos + 2);
+
+        // separamos todas las posibles carpetas
+        url_split = url_limpia.split('/');
+
+        // y obtenemos el dominio actual
+        url_base = url_prot + url_split[0];
+
+        return url_base;
+    }
+
+    function initialize() {
+
+        var selectedMun = $('#MunicipioSelector').val();
+        var selectedEstado = $('#EstadoSelector').val();
+        var selectedValidados = $('#ValidadoSelector').val();
+        if (selectedMun != null && selectedMun != '') {
+            $.getJSON('/Elefantes/ObtenerUbicaciones', { municipio: selectedMun, estado: selectedEstado, validados: selectedValidados }, function (data) {
+
+                if (data == '') {
+                    $("#dialogo-validacion").dialog({
+                        resizable: false,
+                        height: 240,
+                        modal: true,
+                        buttons: {
+                            "Aceptar": function () {
+                                $(this).dialog("close");
+
+                                return true;
+                            }
+
+                        }
+                    });
+                    return false;
+                }
+                var primereg = data[0].text;
+                var res2 = primereg.split("|");
+                var mapOptions = {
+                    center: new google.maps.LatLng(res2[0].replace(",", "."), res2[1].replace(",", ".")),
+                    zoom: 11,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                var map = new google.maps.Map(document.getElementById("map_canvas"),
+                    mapOptions);
+
+                // crear marcadores
+
+                $.each(data, function (i, elefante) {
+
+                    var iconBase = '';
+                    var iconBase1 = dominio_base() + '/Images/estilos_eb/icono_ubicacion_elefante_pendiente_mdpi.png';
+                    var iconBase2 = dominio_base() + '/Images/estilos_eb/icono_ubicacion_elefante_mdpi.png';
+                    var iconBase3 = dominio_base() + '/Images/estilos_eb/icono_edificio_mdpi.png';
+                    var linkelefante = '';
+                    var res = elefante.text.split("|");
+
+                    if (res[4] == "2") {
+                        if (res[5] == "False") {
+                            iconBase = iconBase2;
+                        } else if (res[5] == "True") {
+                            iconBase = iconBase3;
+                        }
+                        linkelefante = '@ViewBag.directorio' + '/Elefantes/Aprobado?Id=' + elefante.value;
+                    } else if (res[4] == "1") {
+                        iconBase = iconBase1;
+                        linkelefante = '@ViewBag.directorio' + '/Elefantes/Edit?Id=' + elefante.value;
+                    }
+
+
+                    //alert('Entro');
+                    var latlng = new google.maps.LatLng(res[0].replace(",", "."), res[1].replace(",", "."));
+                    var marker = new google.maps.Marker({
+                        position: latlng,
+                        map: map,
+                        icon: iconBase,
+                        title: 'Nombre: ' + res[2] + ' Dirección :' + res[3],
+                        draggable: true
+                    });
+
+                    infoWindow = new google.maps.InfoWindow({
+                        content: ""
+                    });
+                    infoWindow.open(map, marker);
+                    geocoder = new google.maps.Geocoder();
+
+                    //Actualizar dirección postal cuando el marcador se mueve  
+                    google.maps.event.addListener(marker, 'click', function () { //dragend  
+                        geocoder.geocode({ latLng: marker.getPosition() }, function (responses) {
+                            if (responses && responses.length > 0) {
+                                infoWindow.setContent(
+                                 "<div><a href=" + linkelefante + ">" + res[2] + "</a><div>"
+                                + "<div style=\"font-size:smaller;\">" + res[3]
+                                + "<br />"
+                                + "Latitude: " + marker.getPosition().lat() + "&nbsp"
+                                + "Longitude: " + marker.getPosition().lng() + "</div>"
+                                );
+                                infoWindow.open(map, marker);
+                            } else {
+                                alert('Error: Google Maps could not determine the address of this location.');
+                            }
+                        });
+                        map.panTo(marker.getPosition());
+                    });
+                    //Close the marker window when being dragged  
+                    google.maps.event.addListener(marker, 'dragstart', function () {
+                        infoWindow.close(map, marker);
+                    });
+
+
+
+                });
+
+            });
+    }
+}
+</script>
+
+
+
+@*//Aqui termina script de controles*@
+
+<div class="contenedor2">
+    <div class="titulo_contenedor">Criterios de Búsqueda</div>
+    <div class="contenido">
+        <div id="criterio1">
+            <div class="styled-select">
+                @Html.DropDownList("RegionSelector", (SelectList)ViewBag.regiones)
+            </div>
+        </div>
+        <div id="criterio2">
+            <div class="styled-select">
+                @Html.DropDownList("DepartamentoSelector", (SelectList)ViewBag.departamentos, "Departamento")
+            </div>
+        </div>
+        <div id="criterio3">
+            <div class="styled-select">
+                @Html.DropDownList("MunicipioSelector", (SelectList)ViewBag.municipios, "Municipio")
+            </div>
+        </div>
+        <div id="criterio4">
+            <div class="styled-select">
+                @Html.DropDownList("EstadoSelector", (SelectList)ViewBag.estados, "Estado")
+            </div>
+        </div>
+        <div id="criterio4">
+            <div class="styled-select">
+                @Html.DropDownList("ValidadoSelector", (SelectList)ViewBag.validados)
+            </div>
+        </div>
+        <div id="criterio5">
+            <input type="submit" value="Buscar" id="boton5" onclick="validarsession(); return false" />
+        </div>
+
+    </div>
+
+</div>
+
+<div id="container">
+    @Html.Partial("InformacionMunicipio")
+</div>
+
+<div class="contenedor2">
+    <div id="map_canvas" style="width: 100%; height: 600px;"></div>
+</div>
+
+<div id="boton3"><a href="~/Elefantes/MapaPrincipal">Mapa Principal</a></div>
+<div id="dialogo-aprobacion" title="Mensaje de Validación" style="display: none;">
+    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>El municipio no puede ser vacío. </p>
+</div>
+<div id="dialogo-validacion" title="Mensaje de Validación" style="display: none;">
+    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>No se encontrarón datos. </p>
+</div>
