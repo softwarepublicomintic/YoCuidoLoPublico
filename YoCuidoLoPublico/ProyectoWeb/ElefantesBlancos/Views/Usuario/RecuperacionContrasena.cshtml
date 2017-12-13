@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "RecuperacionContraseña";
+    Layout = "~/Views/Shared/_LayoutAdm.cshtml";
+}
+<div id="agregar_parametro">
+    <div class="titulo_elefantes">
+        <h1>Olvidó su Contraseña</h1>
+    </div>
+    <h2>&nbsp;</h2>
+    <h2>&nbsp;</h2>
+    <h2>Solicitud de Reseteo de  Contraseña</h2>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <fieldset>
+            <legend>RecuperacionContrasena</legend>
+            <div class="contenido_acceso">
+                <ol>
+                    <li>
+                        <div>
+                            <h4>*Usuario o Correo Electrónico</h4>
+                        </div>
+                        <h2>&nbsp;</h2>
+                        <h2>&nbsp;</h2>
+                        <div>@Html.TextBox("UserName", null, new { @class = "campo_texto" })</div>
+                        <div>
+                            <h5>@TempData["Message"]</h5>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <td align="center" valign="middle">
+                <div>
+                    <input type="submit" value="Resetear Contraseña" />
+                </div>
+            </td>
+            <td align="center" valign="middle">
+                @Html.ActionLink("Regresar", "Login", "Account")
+            </td>
+        </fieldset>
+       
+    }
+</div>

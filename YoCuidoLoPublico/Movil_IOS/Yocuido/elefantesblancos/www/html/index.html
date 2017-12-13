@@ -1,0 +1,75 @@
+<!-- 
+	index.html
+    Página de inicio y redirección con invocación de recursos
+ 
+ 	Proyecto: BuscandoCarrera
+ 	Paquete: co.gov.mineducacion.BuscandoCarrera
+ 	Autor: Generated
+ 	©2013 - Programa Gobierno en Línea
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta name="format-detection" content="telephone=no" />
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1 ,maximum-scale=1, user-scalable=no"/>
+        <link rel="stylesheet" type="text/css" href="../css/jquery.mobile-1.4.0-alpha.1.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.structure-1.4.0-alpha.1.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/jquery.mobile.theme-1.4.0-alpha.1.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/index.css" />
+        <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
+        <title>BuscandoCarrera</title>
+    </head>
+    <body onload="onLoad()">
+    	<div data-role="page" id="index" data-fullscreen="true">
+        	<!-- Splash screen con precarga -->
+        </div>
+		
+        <!-- Librería PhoneGap para iOS -->
+        <script type="text/javascript" src="../js/cordova/cordova.js"></script>
+       
+        <!-- jQuery y librería de POO -->
+        <script type="text/javascript" src="../js/lib/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery.makeclass-1.0.js"></script>
+        
+        <!-- Plugins de PhoneGap -->
+        <script type="text/javascript" src="../js/lib/restgap-1.0.js"></script>
+        
+        <!-- Librerías de objetos de datos -->
+        <script type="text/javascript" src="../js/data/clave-valor-dto.js"></script>
+        <script type="text/javascript" src="../js/data/detalle-institucion-dto.js"></script>
+        <script type="text/javascript" src="../js/data/detalle-programa-dto.js"></script>
+        <script type="text/javascript" src="../js/data/filtros-institucion-dto.js"></script>
+        <script type="text/javascript" src="../js/data/filtros-programa-dto.js"></script>
+        <script type="text/javascript" src="../js/data/identificadores-dto.js"></script>
+        <script type="text/javascript" src="../js/data/ingresos-dto.js"></script>
+        <script type="text/javascript" src="../js/data/institucion-dto.js"></script>
+        <script type="text/javascript" src="../js/data/municipio-dto.js"></script>
+        <script type="text/javascript" src="../js/data/nivel-formacion-dto.js"></script>
+        <script type="text/javascript" src="../js/data/paginacion-dto.js"></script>
+        <script type="text/javascript" src="../js/data/programa-dto.js"></script>
+        <script type="text/javascript" src="../js/data/saberpro-dto.js"></script>
+        
+        <!-- Librerías de conexión a servicios y adaptación de datos -->
+        <script type="text/javascript" src="../js/data/data-source.js"></script>
+        <script type="text/javascript" src="../js/data/data-adapter.js"></script>
+        
+        <!-- Librerías internas de funcionalidad transversal a toda la aplicación -->
+        <script type="text/javascript" src="../js/lib/utils.js"></script>
+        <script type="text/javascript" src="../js/lib/overthrow.js"></script>
+        <script type="text/javascript" src="../js/lib/swipe-2.0.js"></script>
+        
+		<!-- Lógica inicial de la aplicación -->
+        <script type="text/javascript" src="../js/src/index.js"></script>
+        
+        <!-- jQuery Mobile -->
+        <script type="text/javascript" src="../js/lib/jquery.mobile-1.4.0-alpha.1.min.js"></script>
+        
+        <script type="text/javascript">
+            var userAgent = navigator.userAgent;
+            var iOS = (userAgent.match(/(iPad|iPhone|iPod)/i) ? true : false);
+            var iOSRetina = userAgent.match(/(iPad|iPhone|iPod)/i) && window.devicePixelRatio >= 2;
+            var iPad = (userAgent.match(/iPad/i) ? true : false);
+        </script>
+    </body>
+</html>

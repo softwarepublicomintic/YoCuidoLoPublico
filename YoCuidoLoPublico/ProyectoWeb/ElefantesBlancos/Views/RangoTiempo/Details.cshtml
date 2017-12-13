@@ -1,0 +1,30 @@
+﻿@model ElefantesBlancosDatos.Models.stra_rango_tiempo
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>stra_rango_tiempo</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.id_stra_rango_tiempo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.id_stra_rango_tiempo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.rango_tiempo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.rango_tiempo)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

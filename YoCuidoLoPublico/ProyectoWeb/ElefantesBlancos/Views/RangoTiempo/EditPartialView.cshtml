@@ -1,0 +1,129 @@
+﻿@model ElefantesBlancosDatos.Models.stra_rango_tiempo
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<script>
+    $("#btnCreate").click(function () {
+        if (($('#ListadoUno').val() == '') || ($('#ListadoDos').val() == '') || ($('#ListadoTres').val() == '')) {
+            $("#dialogo-aprobacion").dialog({
+                resizable: false,
+                height: 240,
+                modal: false,
+                buttons: {
+                    "Aceptar": function () {
+                        $(this).dialog("close");
+
+                        return true;
+                    }
+
+                }
+            });
+            return false;
+        }
+        else {
+            var nameuno = $("#ListadoUno").val();
+            var namedos = $("#ListadoDos").val();
+            var nametres = $("#ListadoTres").val();
+            var url = '/RangoTiempo/EditPartialView/'
+            var numero1 = parseInt(nameuno);
+            var numero2 = parseInt(namedos);
+            if (numero1 < numero2) {
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: { tiempouno: nameuno, tiempodos: namedos, periodo: nametres },
+                    success: function (json) {
+                        if (json.isRedirect) {
+                            window.location.href = json.redirectUrl;
+                        }
+                    }
+
+                });
+            }
+            else {
+                $("#dialogo-validacion").dialog({
+                    resizable: false,
+                    height: 240,
+                    modal: true,
+                    buttons: {
+                        "Aceptar": function () {
+                            $(this).dialog("close");
+
+                            return true;
+                        }
+
+                    }
+                });
+                return false;
+            }
+        }
+    });
+</script>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)   
+    <fieldset>
+        <legend>stra_rango_tiempo</legend>
+        <div id="agregar_parametro">
+            <h2>
+                <img src="../images/estilos_eb/icono_nuevo_parametro.png" width="80" height="80" /></h2>
+            <h2>&nbsp;</h2>
+            <h2>Editar Parámetro </h2>
+            <p>*Seleccione a continuación el  parámetro a modificar</p>
+            <hr />
+            <table width="100%" border="0" cellpadding="0" cellspacing="15">
+                <tr>
+                    <td>
+                        <div class="editor-field" hidden="hidden">
+                            @Html.EditorFor(model => model.id_stra_rango_tiempo)
+                            @Html.ValidationMessageFor(model => model.id_stra_rango_tiempo)
+                        </div>
+
+                        <div id="criterio1">
+                            <div class="styled-select">
+                                @Html.DropDownList("ListadoUno", (SelectList)ViewBag.uno, "Tiempo Inicial")
+                            </div>
+                        </div>
+
+                        <div id="criterio1">
+                            <div class="styled-select">
+                                @Html.DropDownList("ListadoDos", (SelectList)ViewBag.dos, "Tiempo Final")
+                            </div>
+                        </div>
+
+                        <div id="criterio1">
+                            <div class="styled-select">
+                                @Html.DropDownList("ListadoTres", (SelectList)ViewBag.tres, "Periodo")
+                            </div>
+                        </div>
+
+                    </td>
+                </tr>
+            </table>
+            <td align="center" valign="middle">&nbsp;</td>
+            <p>
+                <div align="center">
+                    <input type="submit" value="Guardar" id="btnCreate" />
+                </div>
+            </p>
+        </div>
+        <p>&nbsp;</p>
+    </fieldset>
+}
+
+<div id="dialogo-aprobacion" title="Mensaje de Validación" style="display: none;">
+    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>No puede dejar la listas vacías </p>
+</div>
+<div id="dialogo-validacion" title="Mensaje de Validación" style="display: none;">
+    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>El tiempo inicial debe ser menor al final </p>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

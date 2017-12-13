@@ -1,0 +1,11 @@
+D:\OneDrive - Asesoftware S.A.S\Proyectos\Min Tic\Desarrollo\Fuentes\CO_529_DATOS_ABIERTOS_2017\YoCuidoLoPublico\LineaBase\ElefantesBlancosDatos\bin\Debug\ElefantesBlancosDatos.dll.config
+D:\OneDrive - Asesoftware S.A.S\Proyectos\Min Tic\Desarrollo\Fuentes\CO_529_DATOS_ABIERTOS_2017\YoCuidoLoPublico\LineaBase\ElefantesBlancosDatos\bin\Debug\ElefantesBlancosDatos.dll
+D:\OneDrive - Asesoftware S.A.S\Proyectos\Min Tic\Desarrollo\Fuentes\CO_529_DATOS_ABIERTOS_2017\YoCuidoLoPublico\LineaBase\ElefantesBlancosDatos\bin\Debug\ElefantesBlancosDatos.pdb
+D:\OneDrive - Asesoftware S.A.S\Proyectos\Min Tic\Desarrollo\Fuentes\CO_529_DATOS_ABIERTOS_2017\YoCuidoLoPublico\LineaBase\ElefantesBlancosDatos\bin\Debug\EntityFramework.dll
+D:\OneDrive - Asesoftware S.A.S\Proyectos\Min Tic\Desarrollo\Fuentes\CO_529_DATOS_ABIERTOS_2017\YoCuidoLoPublico\LineaBase\ElefantesBlancosDatos\bin\Debug\EntityFramework.SqlServer.dll
+D:\OneDrive - Asesoftware S.A.S\Proyectos\Min Tic\Desarrollo\Fuentes\CO_529_DATOS_ABIERTOS_2017\YoCuidoLoPublico\LineaBase\ElefantesBlancosDatos\bin\Debug\mysql.data.entity.EF6.dll
+D:\OneDrive - Asesoftware S.A.S\Proyectos\Min Tic\Desarrollo\Fuentes\CO_529_DATOS_ABIERTOS_2017\YoCuidoLoPublico\LineaBase\ElefantesBlancosDatos\bin\Debug\EntityFramework.xml
+D:\OneDrive - Asesoftware S.A.S\Proyectos\Min Tic\Desarrollo\Fuentes\CO_529_DATOS_ABIERTOS_2017\YoCuidoLoPublico\LineaBase\ElefantesBlancosDatos\bin\Debug\EntityFramework.SqlServer.xml
+D:\OneDrive - Asesoftware S.A.S\Proyectos\Min Tic\Desarrollo\Fuentes\CO_529_DATOS_ABIERTOS_2017\YoCuidoLoPublico\LineaBase\ElefantesBlancosDatos\obj\Debug\ElefantesBlancosDatos.csprojResolveAssemblyReference.cache
+D:\OneDrive - Asesoftware S.A.S\Proyectos\Min Tic\Desarrollo\Fuentes\CO_529_DATOS_ABIERTOS_2017\YoCuidoLoPublico\LineaBase\ElefantesBlancosDatos\obj\Debug\ElefantesBlancosDatos.dll
+D:\OneDrive - Asesoftware S.A.S\Proyectos\Min Tic\Desarrollo\Fuentes\CO_529_DATOS_ABIERTOS_2017\YoCuidoLoPublico\LineaBase\ElefantesBlancosDatos\obj\Debug\ElefantesBlancosDatos.pdb

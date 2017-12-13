@@ -1,0 +1,26 @@
+[
+    {
+        "codigo": "5",
+        "nombre": "AMAZÓNICA"
+    },
+    {
+        "codigo": "4",
+        "nombre": "ORINOQUÍA"
+    },
+    {
+        "codigo": "1",
+        "nombre": "CARIBE"
+    },
+    {
+        "codigo": "2",
+        "nombre": "ANDINA"
+    },
+    {
+        "codigo": "3",
+        "nombre": "PACÍFICA"
+    },
+    {
+        "codigo": "6",
+        "nombre": "INSULAR"
+    }
+]

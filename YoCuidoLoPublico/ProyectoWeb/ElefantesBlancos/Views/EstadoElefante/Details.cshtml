@@ -1,0 +1,32 @@
+﻿@model ElefantesBlancosDatos.Models.stra_estados_elefante
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>stra_estados_elefante</legend>
+
+    <div class="display-label">
+         @*@Html.DisplayNameFor(model => model.id_stra_estado_elefante)*@
+        Detalle
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.id_stra_estado_elefante)
+    </div>
+
+    <div class="display-label">
+@*         @Html.DisplayNameFor(model => model.nombre)*@
+        Estado
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.nombre)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Editar", "Edit", new {id=Model.id_stra_estado_elefante }) |
+    @Html.ActionLink("Regresar a la consulta", "Index")
+</p>

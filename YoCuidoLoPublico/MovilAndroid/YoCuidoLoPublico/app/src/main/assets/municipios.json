@@ -1,0 +1,5612 @@
+﻿[
+    {
+        "codigo": "05001",
+        "nombre": "MEDELLÍN",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05002",
+        "nombre": "ABEJORRAL",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05004",
+        "nombre": "ABRIAQUÍ",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05021",
+        "nombre": "ALEJANDRÍA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05030",
+        "nombre": "AMAGÁ",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05031",
+        "nombre": "AMALFI",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05034",
+        "nombre": "ANDES",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05036",
+        "nombre": "ANGELÓPOLIS",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05038",
+        "nombre": "ANGOSTURA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05040",
+        "nombre": "ANORÍ",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05042",
+        "nombre": "SANTAFÉ DE ANTIOQUIA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05044",
+        "nombre": "ANZA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05045",
+        "nombre": "APARTADÓ",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05051",
+        "nombre": "ARBOLETES",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05055",
+        "nombre": "ARGELIA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05059",
+        "nombre": "ARMENIA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05079",
+        "nombre": "BARBOSA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05086",
+        "nombre": "BELMIRA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05088",
+        "nombre": "BELLO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05091",
+        "nombre": "BETANIA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05093",
+        "nombre": "BETULIA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05101",
+        "nombre": "CIUDAD BOLÍVAR",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05107",
+        "nombre": "BRICEÑO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05113",
+        "nombre": "BURITICÁ",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05120",
+        "nombre": "CÁCERES",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05125",
+        "nombre": "CAICEDO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05129",
+        "nombre": "CALDAS",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05134",
+        "nombre": "CAMPAMENTO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05138",
+        "nombre": "CAÑASGORDAS",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05142",
+        "nombre": "CARACOLÍ",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05145",
+        "nombre": "CARAMANTA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05147",
+        "nombre": "CAREPA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05148",
+        "nombre": "EL CARMEN DE VIBORAL",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05150",
+        "nombre": "CAROLINA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05154",
+        "nombre": "CAUCASIA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05172",
+        "nombre": "CHIGORODÓ",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05190",
+        "nombre": "CISNEROS",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05197",
+        "nombre": "COCORNÁ",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05206",
+        "nombre": "CONCEPCIÓN",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05209",
+        "nombre": "CONCORDIA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05212",
+        "nombre": "COPACABANA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05234",
+        "nombre": "DABEIBA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05237",
+        "nombre": "DONMATÍAS",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05240",
+        "nombre": "EBÉJICO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05250",
+        "nombre": "EL BAGRE",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05264",
+        "nombre": "ENTRERRIOS",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05266",
+        "nombre": "ENVIGADO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05282",
+        "nombre": "FREDONIA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05284",
+        "nombre": "FRONTINO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05306",
+        "nombre": "GIRALDO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05308",
+        "nombre": "GIRARDOTA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05310",
+        "nombre": "GÓMEZ PLATA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05313",
+        "nombre": "GRANADA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05315",
+        "nombre": "GUADALUPE",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05318",
+        "nombre": "GUARNE",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05321",
+        "nombre": "GUATAPE",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05347",
+        "nombre": "HELICONIA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05353",
+        "nombre": "HISPANIA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05360",
+        "nombre": "ITAGUI",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05361",
+        "nombre": "ITUANGO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05364",
+        "nombre": "JARDÍN",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05368",
+        "nombre": "JERICÓ",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05376",
+        "nombre": "LA CEJA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05380",
+        "nombre": "LA ESTRELLA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05390",
+        "nombre": "LA PINTADA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05400",
+        "nombre": "LA UNIÓN",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05411",
+        "nombre": "LIBORINA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05425",
+        "nombre": "MACEO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05440",
+        "nombre": "MARINILLA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05467",
+        "nombre": "MONTEBELLO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05475",
+        "nombre": "MURINDÓ",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05480",
+        "nombre": "MUTATÁ",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05483",
+        "nombre": "NARIÑO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05490",
+        "nombre": "NECOCLÍ",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05495",
+        "nombre": "NECHÍ",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05501",
+        "nombre": "OLAYA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05541",
+        "nombre": "PEÑOL",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05543",
+        "nombre": "PEQUE",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05576",
+        "nombre": "PUEBLORRICO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05579",
+        "nombre": "PUERTO BERRÍO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05585",
+        "nombre": "PUERTO NARE",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05591",
+        "nombre": "PUERTO TRIUNFO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05604",
+        "nombre": "REMEDIOS",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05607",
+        "nombre": "RETIRO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05615",
+        "nombre": "RIONEGRO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05628",
+        "nombre": "SABANALARGA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05631",
+        "nombre": "SABANETA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05642",
+        "nombre": "SALGAR",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05647",
+        "nombre": "SAN ANDRÉS DE CUERQUÍA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05649",
+        "nombre": "SAN CARLOS",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05652",
+        "nombre": "SAN FRANCISCO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05656",
+        "nombre": "SAN JERÓNIMO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05658",
+        "nombre": "SAN JOSÉ DE LA MONTAÑA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05659",
+        "nombre": "SAN JUAN DE URABÁ",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05660",
+        "nombre": "SAN LUIS",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05664",
+        "nombre": "SAN PEDRO DE LOS MILAGROS",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05665",
+        "nombre": "SAN PEDRO DE URABA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05667",
+        "nombre": "SAN RAFAEL",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05670",
+        "nombre": "SAN ROQUE",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05674",
+        "nombre": "SAN VICENTE FERRER",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05679",
+        "nombre": "SANTA BÁRBARA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05686",
+        "nombre": "SANTA ROSA DE OSOS",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05690",
+        "nombre": "SANTO DOMINGO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05697",
+        "nombre": "EL SANTUARIO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05736",
+        "nombre": "SEGOVIA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05756",
+        "nombre": "SONSON",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05761",
+        "nombre": "SOPETRÁN",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05789",
+        "nombre": "TÁMESIS",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05790",
+        "nombre": "TARAZÁ",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05792",
+        "nombre": "TARSO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05809",
+        "nombre": "TITIRIBÍ",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05819",
+        "nombre": "TOLEDO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05837",
+        "nombre": "TURBO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05842",
+        "nombre": "URAMITA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05847",
+        "nombre": "URRAO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05854",
+        "nombre": "VALDIVIA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05856",
+        "nombre": "VALPARAÍSO",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05858",
+        "nombre": "VEGACHÍ",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05861",
+        "nombre": "VENECIA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05873",
+        "nombre": "VIGÍA DEL FUERTE",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05885",
+        "nombre": "YALÍ",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05887",
+        "nombre": "YARUMAL",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05890",
+        "nombre": "YOLOMBÓ",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05893",
+        "nombre": "YONDÓ",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "05895",
+        "nombre": "ZARAGOZA",
+        "cod_depto": "05"
+    },
+    {
+        "codigo": "08001",
+        "nombre": "BARRANQUILLA",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08078",
+        "nombre": "BARANOA",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08137",
+        "nombre": "CAMPO DE LA CRUZ",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08141",
+        "nombre": "CANDELARIA",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08296",
+        "nombre": "GALAPA",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08372",
+        "nombre": "JUAN DE ACOSTA",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08421",
+        "nombre": "LURUACO",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08433",
+        "nombre": "MALAMBO",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08436",
+        "nombre": "MANATÍ",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08520",
+        "nombre": "PALMAR DE VARELA",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08549",
+        "nombre": "PIOJÓ",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08558",
+        "nombre": "POLONUEVO",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08560",
+        "nombre": "PONEDERA",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08573",
+        "nombre": "PUERTO COLOMBIA",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08606",
+        "nombre": "REPELÓN",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08634",
+        "nombre": "SABANAGRANDE",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08638",
+        "nombre": "SABANALARGA",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08675",
+        "nombre": "SANTA LUCÍA",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08685",
+        "nombre": "SANTO TOMÁS",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08758",
+        "nombre": "SOLEDAD",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08770",
+        "nombre": "SUAN",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08832",
+        "nombre": "TUBARÁ",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "08849",
+        "nombre": "USIACURÍ",
+        "cod_depto": "08"
+    },
+    {
+        "codigo": "11001",
+        "nombre": "BOGOTÁ, D.C.",
+        "cod_depto": "11"
+    },
+    {
+        "codigo": "13001",
+        "nombre": "CARTAGENA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13006",
+        "nombre": "ACHÍ",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13030",
+        "nombre": "ALTOS DEL ROSARIO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13042",
+        "nombre": "ARENAL",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13052",
+        "nombre": "ARJONA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13062",
+        "nombre": "ARROYOHONDO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13074",
+        "nombre": "BARRANCO DE LOBA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13140",
+        "nombre": "CALAMAR",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13160",
+        "nombre": "CANTAGALLO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13188",
+        "nombre": "CICUCO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13212",
+        "nombre": "CÓRDOBA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13222",
+        "nombre": "CLEMENCIA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13244",
+        "nombre": "EL CARMEN DE BOLÍVAR",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13248",
+        "nombre": "EL GUAMO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13268",
+        "nombre": "EL PEÑÓN",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13300",
+        "nombre": "HATILLO DE LOBA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13430",
+        "nombre": "MAGANGUÉ",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13433",
+        "nombre": "MAHATES",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13440",
+        "nombre": "MARGARITA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13442",
+        "nombre": "MARÍA LA BAJA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13458",
+        "nombre": "MONTECRISTO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13468",
+        "nombre": "MOMPÓS",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13473",
+        "nombre": "MORALES",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13490",
+        "nombre": "NOROSÍ",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13549",
+        "nombre": "PINILLOS",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13580",
+        "nombre": "REGIDOR",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13600",
+        "nombre": "RÍO VIEJO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13620",
+        "nombre": "SAN CRISTÓBAL",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13647",
+        "nombre": "SAN ESTANISLAO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13650",
+        "nombre": "SAN FERNANDO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13654",
+        "nombre": "SAN JACINTO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13655",
+        "nombre": "SAN JACINTO DEL CAUCA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13657",
+        "nombre": "SAN JUAN NEPOMUCENO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13667",
+        "nombre": "SAN MARTÍN DE LOBA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13670",
+        "nombre": "SAN PABLO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13673",
+        "nombre": "SANTA CATALINA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13683",
+        "nombre": "SANTA ROSA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13688",
+        "nombre": "SANTA ROSA DEL SUR",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13744",
+        "nombre": "SIMITÍ",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13760",
+        "nombre": "SOPLAVIENTO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13780",
+        "nombre": "TALAIGUA NUEVO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13810",
+        "nombre": "TIQUISIO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13836",
+        "nombre": "TURBACO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13838",
+        "nombre": "TURBANÁ",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13873",
+        "nombre": "VILLANUEVA",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "13894",
+        "nombre": "ZAMBRANO",
+        "cod_depto": "13"
+    },
+    {
+        "codigo": "15001",
+        "nombre": "TUNJA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15022",
+        "nombre": "ALMEIDA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15047",
+        "nombre": "AQUITANIA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15051",
+        "nombre": "ARCABUCO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15087",
+        "nombre": "BELÉN",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15090",
+        "nombre": "BERBEO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15092",
+        "nombre": "BETÉITIVA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15097",
+        "nombre": "BOAVITA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15104",
+        "nombre": "BOYACÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15106",
+        "nombre": "BRICEÑO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15109",
+        "nombre": "BUENAVISTA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15114",
+        "nombre": "BUSBANZÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15131",
+        "nombre": "CALDAS",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15135",
+        "nombre": "CAMPOHERMOSO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15162",
+        "nombre": "CERINZA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15172",
+        "nombre": "CHINAVITA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15176",
+        "nombre": "CHIQUINQUIRÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15180",
+        "nombre": "CHISCAS",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15183",
+        "nombre": "CHITA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15185",
+        "nombre": "CHITARAQUE",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15187",
+        "nombre": "CHIVATÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15189",
+        "nombre": "CIÉNEGA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15204",
+        "nombre": "CÓMBITA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15212",
+        "nombre": "COPER",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15215",
+        "nombre": "CORRALES",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15218",
+        "nombre": "COVARACHÍA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15223",
+        "nombre": "CUBARÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15224",
+        "nombre": "CUCAITA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15226",
+        "nombre": "CUÍTIVA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15232",
+        "nombre": "CHÍQUIZA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15236",
+        "nombre": "CHIVOR",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15238",
+        "nombre": "DUITAMA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15244",
+        "nombre": "EL COCUY",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15248",
+        "nombre": "EL ESPINO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15272",
+        "nombre": "FIRAVITOBA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15276",
+        "nombre": "FLORESTA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15293",
+        "nombre": "GACHANTIVÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15296",
+        "nombre": "GAMEZA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15299",
+        "nombre": "GARAGOA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15317",
+        "nombre": "GUACAMAYAS",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15322",
+        "nombre": "GUATEQUE",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15325",
+        "nombre": "GUAYATÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15332",
+        "nombre": "GÜICÁN",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15362",
+        "nombre": "IZA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15367",
+        "nombre": "JENESANO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15368",
+        "nombre": "JERICÓ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15377",
+        "nombre": "LABRANZAGRANDE",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15380",
+        "nombre": "LA CAPILLA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15401",
+        "nombre": "LA VICTORIA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15403",
+        "nombre": "LA UVITA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15407",
+        "nombre": "VILLA DE LEYVA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15425",
+        "nombre": "MACANAL",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15442",
+        "nombre": "MARIPÍ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15455",
+        "nombre": "MIRAFLORES",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15464",
+        "nombre": "MONGUA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15466",
+        "nombre": "MONGUÍ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15469",
+        "nombre": "MONIQUIRÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15476",
+        "nombre": "MOTAVITA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15480",
+        "nombre": "MUZO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15491",
+        "nombre": "NOBSA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15494",
+        "nombre": "NUEVO COLÓN",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15500",
+        "nombre": "OICATÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15507",
+        "nombre": "OTANCHE",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15511",
+        "nombre": "PACHAVITA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15514",
+        "nombre": "PÁEZ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15516",
+        "nombre": "PAIPA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15518",
+        "nombre": "PAJARITO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15522",
+        "nombre": "PANQUEBA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15531",
+        "nombre": "PAUNA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15533",
+        "nombre": "PAYA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15537",
+        "nombre": "PAZ DE RÍO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15542",
+        "nombre": "PESCA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15550",
+        "nombre": "PISBA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15572",
+        "nombre": "PUERTO BOYACÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15580",
+        "nombre": "QUÍPAMA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15599",
+        "nombre": "RAMIRIQUÍ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15600",
+        "nombre": "RÁQUIRA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15621",
+        "nombre": "RONDÓN",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15632",
+        "nombre": "SABOYÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15638",
+        "nombre": "SÁCHICA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15646",
+        "nombre": "SAMACÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15660",
+        "nombre": "SAN EDUARDO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15664",
+        "nombre": "SAN JOSÉ DE PARE",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15667",
+        "nombre": "SAN LUIS DE GACENO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15673",
+        "nombre": "SAN MATEO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15676",
+        "nombre": "SAN MIGUEL DE SEMA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15681",
+        "nombre": "SAN PABLO DE BORBUR",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15686",
+        "nombre": "SANTANA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15690",
+        "nombre": "SANTA MARÍA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15693",
+        "nombre": "SANTA ROSA DE VITERBO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15696",
+        "nombre": "SANTA SOFÍA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15720",
+        "nombre": "SATIVANORTE",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15723",
+        "nombre": "SATIVASUR",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15740",
+        "nombre": "SIACHOQUE",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15753",
+        "nombre": "SOATÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15755",
+        "nombre": "SOCOTÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15757",
+        "nombre": "SOCHA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15759",
+        "nombre": "SOGAMOSO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15761",
+        "nombre": "SOMONDOCO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15762",
+        "nombre": "SORA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15763",
+        "nombre": "SOTAQUIRÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15764",
+        "nombre": "SORACÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15774",
+        "nombre": "SUSACÓN",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15776",
+        "nombre": "SUTAMARCHÁN",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15778",
+        "nombre": "SUTATENZA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15790",
+        "nombre": "TASCO",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15798",
+        "nombre": "TENZA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15804",
+        "nombre": "TIBANÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15806",
+        "nombre": "TIBASOSA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15808",
+        "nombre": "TINJACÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15810",
+        "nombre": "TIPACOQUE",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15814",
+        "nombre": "TOCA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15816",
+        "nombre": "TOGÜÍ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15820",
+        "nombre": "TÓPAGA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15822",
+        "nombre": "TOTA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15832",
+        "nombre": "TUNUNGUÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15835",
+        "nombre": "TURMEQUÉ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15837",
+        "nombre": "TUTA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15839",
+        "nombre": "TUTAZÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15842",
+        "nombre": "UMBITA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15861",
+        "nombre": "VENTAQUEMADA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15879",
+        "nombre": "VIRACACHÁ",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "15897",
+        "nombre": "ZETAQUIRA",
+        "cod_depto": "15"
+    },
+    {
+        "codigo": "17001",
+        "nombre": "MANIZALES",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17013",
+        "nombre": "AGUADAS",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17042",
+        "nombre": "ANSERMA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17050",
+        "nombre": "ARANZAZU",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17088",
+        "nombre": "BELALCÁZAR",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17174",
+        "nombre": "CHINCHINÁ",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17272",
+        "nombre": "FILADELFIA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17380",
+        "nombre": "LA DORADA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17388",
+        "nombre": "LA MERCED",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17433",
+        "nombre": "MANZANARES",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17442",
+        "nombre": "MARMATO",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17444",
+        "nombre": "MARQUETALIA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17446",
+        "nombre": "MARULANDA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17486",
+        "nombre": "NEIRA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17495",
+        "nombre": "NORCASIA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17513",
+        "nombre": "PÁCORA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17524",
+        "nombre": "PALESTINA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17541",
+        "nombre": "PENSILVANIA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17614",
+        "nombre": "RIOSUCIO",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17616",
+        "nombre": "RISARALDA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17653",
+        "nombre": "SALAMINA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17662",
+        "nombre": "SAMANÁ",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17665",
+        "nombre": "SAN JOSÉ",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17777",
+        "nombre": "SUPÍA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17867",
+        "nombre": "VICTORIA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17873",
+        "nombre": "VILLAMARÍA",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "17877",
+        "nombre": "VITERBO",
+        "cod_depto": "17"
+    },
+    {
+        "codigo": "18001",
+        "nombre": "FLORENCIA",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18029",
+        "nombre": "ALBANIA",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18094",
+        "nombre": "BELÉN DE LOS ANDAQUÍES",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18150",
+        "nombre": "CARTAGENA DEL CHAIRÁ",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18205",
+        "nombre": "CURILLO",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18247",
+        "nombre": "EL DONCELLO",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18256",
+        "nombre": "EL PAUJIL",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18410",
+        "nombre": "LA MONTAÑITA",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18460",
+        "nombre": "MILÁN",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18479",
+        "nombre": "MORELIA",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18592",
+        "nombre": "PUERTO RICO",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18610",
+        "nombre": "SAN JOSÉ DEL FRAGUA",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18753",
+        "nombre": "SAN VICENTE DEL CAGUÁN",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18756",
+        "nombre": "SOLANO",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18785",
+        "nombre": "SOLITA",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "18860",
+        "nombre": "VALPARAÍSO",
+        "cod_depto": "18"
+    },
+    {
+        "codigo": "19001",
+        "nombre": "POPAYÁN",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19022",
+        "nombre": "ALMAGUER",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19050",
+        "nombre": "ARGELIA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19075",
+        "nombre": "BALBOA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19100",
+        "nombre": "BOLÍVAR",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19110",
+        "nombre": "BUENOS AIRES",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19130",
+        "nombre": "CAJIBÍO",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19137",
+        "nombre": "CALDONO",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19142",
+        "nombre": "CALOTO",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19212",
+        "nombre": "CORINTO",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19256",
+        "nombre": "EL TAMBO",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19290",
+        "nombre": "FLORENCIA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19300",
+        "nombre": "GUACHENÉ",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19318",
+        "nombre": "GUAPI",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19355",
+        "nombre": "INZÁ",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19364",
+        "nombre": "JAMBALÓ",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19392",
+        "nombre": "LA SIERRA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19397",
+        "nombre": "LA VEGA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19418",
+        "nombre": "LÓPEZ",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19450",
+        "nombre": "MERCADERES",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19455",
+        "nombre": "MIRANDA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19473",
+        "nombre": "MORALES",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19513",
+        "nombre": "PADILLA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19517",
+        "nombre": "PAEZ",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19532",
+        "nombre": "PATÍA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19533",
+        "nombre": "PIAMONTE",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19548",
+        "nombre": "PIENDAMÓ",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19573",
+        "nombre": "PUERTO TEJADA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19585",
+        "nombre": "PURACÉ",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19622",
+        "nombre": "ROSAS",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19693",
+        "nombre": "SAN SEBASTIÁN",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19698",
+        "nombre": "SANTANDER DE QUILICHAO",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19701",
+        "nombre": "SANTA ROSA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19743",
+        "nombre": "SILVIA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19760",
+        "nombre": "SOTARA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19780",
+        "nombre": "SUÁREZ",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19785",
+        "nombre": "SUCRE",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19807",
+        "nombre": "TIMBÍO",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19809",
+        "nombre": "TIMBIQUÍ",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19821",
+        "nombre": "TORIBIO",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19824",
+        "nombre": "TOTORÓ",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "19845",
+        "nombre": "VILLA RICA",
+        "cod_depto": "19"
+    },
+    {
+        "codigo": "20001",
+        "nombre": "VALLEDUPAR",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20011",
+        "nombre": "AGUACHICA",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20013",
+        "nombre": "AGUSTÍN CODAZZI",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20032",
+        "nombre": "ASTREA",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20045",
+        "nombre": "BECERRIL",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20060",
+        "nombre": "BOSCONIA",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20175",
+        "nombre": "CHIMICHAGUA",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20178",
+        "nombre": "CHIRIGUANÁ",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20228",
+        "nombre": "CURUMANÍ",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20238",
+        "nombre": "EL COPEY",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20250",
+        "nombre": "EL PASO",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20295",
+        "nombre": "GAMARRA",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20310",
+        "nombre": "GONZÁLEZ",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20383",
+        "nombre": "LA GLORIA",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20400",
+        "nombre": "LA JAGUA DE IBIRICO",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20443",
+        "nombre": "MANAURE",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20517",
+        "nombre": "PAILITAS",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20550",
+        "nombre": "PELAYA",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20570",
+        "nombre": "PUEBLO BELLO",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20614",
+        "nombre": "RÍO DE ORO",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20621",
+        "nombre": "LA PAZ",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20710",
+        "nombre": "SAN ALBERTO",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20750",
+        "nombre": "SAN DIEGO",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20770",
+        "nombre": "SAN MARTÍN",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "20787",
+        "nombre": "TAMALAMEQUE",
+        "cod_depto": "20"
+    },
+    {
+        "codigo": "23682",
+        "nombre": "SAN JOSÉ DE URÉ",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23001",
+        "nombre": "MONTERÍA",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23068",
+        "nombre": "AYAPEL",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23079",
+        "nombre": "BUENAVISTA",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23090",
+        "nombre": "CANALETE",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23162",
+        "nombre": "CERETÉ",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23168",
+        "nombre": "CHIMÁ",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23182",
+        "nombre": "CHINÚ",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23189",
+        "nombre": "CIÉNAGA DE ORO",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23300",
+        "nombre": "COTORRA",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23350",
+        "nombre": "LA APARTADA",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23417",
+        "nombre": "LORICA",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23419",
+        "nombre": "LOS CÓRDOBAS",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23464",
+        "nombre": "MOMIL",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23466",
+        "nombre": "MONTELÍBANO",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23500",
+        "nombre": "MOÑITOS",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23555",
+        "nombre": "PLANETA RICA",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23570",
+        "nombre": "PUEBLO NUEVO",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23574",
+        "nombre": "PUERTO ESCONDIDO",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23580",
+        "nombre": "PUERTO LIBERTADOR",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23586",
+        "nombre": "PURÍSIMA",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23660",
+        "nombre": "SAHAGÚN",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23670",
+        "nombre": "SAN ANDRÉS DE SOTAVENTO",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23672",
+        "nombre": "SAN ANTERO",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23675",
+        "nombre": "SAN BERNARDO DEL VIENTO",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23678",
+        "nombre": "SAN CARLOS",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23686",
+        "nombre": "SAN PELAYO",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23807",
+        "nombre": "TIERRALTA",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23815",
+        "nombre": "TUCHÍN",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "23855",
+        "nombre": "VALENCIA",
+        "cod_depto": "23"
+    },
+    {
+        "codigo": "25001",
+        "nombre": "AGUA DE DIOS",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25019",
+        "nombre": "ALBÁN",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25035",
+        "nombre": "ANAPOIMA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25040",
+        "nombre": "ANOLAIMA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25053",
+        "nombre": "ARBELÁEZ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25086",
+        "nombre": "BELTRÁN",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25095",
+        "nombre": "BITUIMA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25099",
+        "nombre": "BOJACÁ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25120",
+        "nombre": "CABRERA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25123",
+        "nombre": "CACHIPAY",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25126",
+        "nombre": "CAJICÁ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25148",
+        "nombre": "CAPARRAPÍ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25151",
+        "nombre": "CAQUEZA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25154",
+        "nombre": "CARMEN DE CARUPA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25168",
+        "nombre": "CHAGUANÍ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25175",
+        "nombre": "CHÍA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25178",
+        "nombre": "CHIPAQUE",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25181",
+        "nombre": "CHOACHÍ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25183",
+        "nombre": "CHOCONTÁ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25200",
+        "nombre": "COGUA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25214",
+        "nombre": "COTA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25224",
+        "nombre": "CUCUNUBÁ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25245",
+        "nombre": "EL COLEGIO",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25258",
+        "nombre": "EL PEÑÓN",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25260",
+        "nombre": "EL ROSAL",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25269",
+        "nombre": "FACATATIVÁ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25279",
+        "nombre": "FOMEQUE",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25281",
+        "nombre": "FOSCA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25286",
+        "nombre": "FUNZA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25288",
+        "nombre": "FÚQUENE",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25290",
+        "nombre": "FUSAGASUGÁ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25293",
+        "nombre": "GACHALA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25295",
+        "nombre": "GACHANCIPÁ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25297",
+        "nombre": "GACHETÁ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25299",
+        "nombre": "GAMA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25307",
+        "nombre": "GIRARDOT",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25312",
+        "nombre": "GRANADA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25317",
+        "nombre": "GUACHETÁ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25320",
+        "nombre": "GUADUAS",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25322",
+        "nombre": "GUASCA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25324",
+        "nombre": "GUATAQUÍ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25326",
+        "nombre": "GUATAVITA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25328",
+        "nombre": "GUAYABAL DE SIQUIMA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25335",
+        "nombre": "GUAYABETAL",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25339",
+        "nombre": "GUTIÉRREZ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25368",
+        "nombre": "JERUSALÉN",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25372",
+        "nombre": "JUNÍN",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25377",
+        "nombre": "LA CALERA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25386",
+        "nombre": "LA MESA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25394",
+        "nombre": "LA PALMA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25398",
+        "nombre": "LA PEÑA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25402",
+        "nombre": "LA VEGA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25407",
+        "nombre": "LENGUAZAQUE",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25426",
+        "nombre": "MACHETA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25430",
+        "nombre": "MADRID",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25436",
+        "nombre": "MANTA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25438",
+        "nombre": "MEDINA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25473",
+        "nombre": "MOSQUERA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25483",
+        "nombre": "NARIÑO",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25486",
+        "nombre": "NEMOCÓN",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25488",
+        "nombre": "NILO",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25489",
+        "nombre": "NIMAIMA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25491",
+        "nombre": "NOCAIMA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25506",
+        "nombre": "VENECIA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25513",
+        "nombre": "PACHO",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25518",
+        "nombre": "PAIME",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25524",
+        "nombre": "PANDI",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25530",
+        "nombre": "PARATEBUENO",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25535",
+        "nombre": "PASCA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25572",
+        "nombre": "PUERTO SALGAR",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25580",
+        "nombre": "PULÍ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25592",
+        "nombre": "QUEBRADANEGRA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25594",
+        "nombre": "QUETAME",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25596",
+        "nombre": "QUIPILE",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25599",
+        "nombre": "APULO",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25612",
+        "nombre": "RICAURTE",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25645",
+        "nombre": "SAN ANTONIO DEL TEQUENDAMA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25649",
+        "nombre": "SAN BERNARDO",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25653",
+        "nombre": "SAN CAYETANO",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25658",
+        "nombre": "SAN FRANCISCO",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25662",
+        "nombre": "SAN JUAN DE RÍO SECO",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25718",
+        "nombre": "SASAIMA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25736",
+        "nombre": "SESQUILÉ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25740",
+        "nombre": "SIBATÉ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25743",
+        "nombre": "SILVANIA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25745",
+        "nombre": "SIMIJACA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25754",
+        "nombre": "SOACHA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25758",
+        "nombre": "SOPÓ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25769",
+        "nombre": "SUBACHOQUE",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25772",
+        "nombre": "SUESCA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25777",
+        "nombre": "SUPATÁ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25779",
+        "nombre": "SUSA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25781",
+        "nombre": "SUTATAUSA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25785",
+        "nombre": "TABIO",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25793",
+        "nombre": "TAUSA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25797",
+        "nombre": "TENA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25799",
+        "nombre": "TENJO",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25805",
+        "nombre": "TIBACUY",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25807",
+        "nombre": "TIBIRITA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25815",
+        "nombre": "TOCAIMA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25817",
+        "nombre": "TOCANCIPÁ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25823",
+        "nombre": "TOPAIPÍ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25839",
+        "nombre": "UBALÁ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25841",
+        "nombre": "UBAQUE",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25843",
+        "nombre": "VILLA DE SAN DIEGO DE UBATE",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25845",
+        "nombre": "UNE",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25851",
+        "nombre": "ÚTICA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25862",
+        "nombre": "VERGARA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25867",
+        "nombre": "VIANÍ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25871",
+        "nombre": "VILLAGÓMEZ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25873",
+        "nombre": "VILLAPINZÓN",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25875",
+        "nombre": "VILLETA",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25878",
+        "nombre": "VIOTÁ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25885",
+        "nombre": "YACOPÍ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25898",
+        "nombre": "ZIPACÓN",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "25899",
+        "nombre": "ZIPAQUIRÁ",
+        "cod_depto": "25"
+    },
+    {
+        "codigo": "27001",
+        "nombre": "QUIBDÓ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27006",
+        "nombre": "ACANDÍ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27025",
+        "nombre": "ALTO BAUDÓ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27050",
+        "nombre": "ATRATO",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27073",
+        "nombre": "BAGADÓ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27075",
+        "nombre": "BAHÍA SOLANO",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27077",
+        "nombre": "BAJO BAUDÓ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27099",
+        "nombre": "BOJAYA",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27135",
+        "nombre": "EL CANTÓN DEL SAN PABLO",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27150",
+        "nombre": "CARMEN DEL DARIÉN",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27160",
+        "nombre": "CÉRTEGUI",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27205",
+        "nombre": "CONDOTO",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27245",
+        "nombre": "EL CARMEN DE ATRATO",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27250",
+        "nombre": "EL LITORAL DEL SAN JUAN",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27361",
+        "nombre": "ISTMINA",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27372",
+        "nombre": "JURADÓ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27413",
+        "nombre": "LLORÓ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27425",
+        "nombre": "MEDIO ATRATO",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27430",
+        "nombre": "MEDIO BAUDÓ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27450",
+        "nombre": "MEDIO SAN JUAN",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27491",
+        "nombre": "NÓVITA",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27495",
+        "nombre": "NUQUÍ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27580",
+        "nombre": "RÍO IRÓ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27600",
+        "nombre": "RÍO QUITO",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27615",
+        "nombre": "RIOSUCIO",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27660",
+        "nombre": "SAN JOSÉ DEL PALMAR",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27745",
+        "nombre": "SIPÍ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27787",
+        "nombre": "TADÓ",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27800",
+        "nombre": "UNGUÍA",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "27810",
+        "nombre": "UNIÓN PANAMERICANA",
+        "cod_depto": "27"
+    },
+    {
+        "codigo": "41001",
+        "nombre": "NEIVA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41006",
+        "nombre": "ACEVEDO",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41013",
+        "nombre": "AGRADO",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41016",
+        "nombre": "AIPE",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41020",
+        "nombre": "ALGECIRAS",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41026",
+        "nombre": "ALTAMIRA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41078",
+        "nombre": "BARAYA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41132",
+        "nombre": "CAMPOALEGRE",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41206",
+        "nombre": "COLOMBIA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41244",
+        "nombre": "ELÍAS",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41298",
+        "nombre": "GARZÓN",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41306",
+        "nombre": "GIGANTE",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41319",
+        "nombre": "GUADALUPE",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41349",
+        "nombre": "HOBO",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41357",
+        "nombre": "IQUIRA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41359",
+        "nombre": "ISNOS",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41378",
+        "nombre": "LA ARGENTINA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41396",
+        "nombre": "LA PLATA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41483",
+        "nombre": "NÁTAGA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41503",
+        "nombre": "OPORAPA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41518",
+        "nombre": "PAICOL",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41524",
+        "nombre": "PALERMO",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41530",
+        "nombre": "PALESTINA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41548",
+        "nombre": "PITAL",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41551",
+        "nombre": "PITALITO",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41615",
+        "nombre": "RIVERA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41660",
+        "nombre": "SALADOBLANCO",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41668",
+        "nombre": "SAN AGUSTÍN",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41676",
+        "nombre": "SANTA MARÍA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41770",
+        "nombre": "SUAZA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41791",
+        "nombre": "TARQUI",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41797",
+        "nombre": "TESALIA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41799",
+        "nombre": "TELLO",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41801",
+        "nombre": "TERUEL",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41807",
+        "nombre": "TIMANÁ",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41872",
+        "nombre": "VILLAVIEJA",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "41885",
+        "nombre": "YAGUARÁ",
+        "cod_depto": "41"
+    },
+    {
+        "codigo": "44001",
+        "nombre": "RIOHACHA",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44035",
+        "nombre": "ALBANIA",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44078",
+        "nombre": "BARRANCAS",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44090",
+        "nombre": "DIBULLA",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44098",
+        "nombre": "DISTRACCIÓN",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44110",
+        "nombre": "EL MOLINO",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44279",
+        "nombre": "FONSECA",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44378",
+        "nombre": "HATONUEVO",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44420",
+        "nombre": "LA JAGUA DEL PILAR",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44430",
+        "nombre": "MAICAO",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44560",
+        "nombre": "MANAURE",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44650",
+        "nombre": "SAN JUAN DEL CESAR",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44847",
+        "nombre": "URIBIA",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44855",
+        "nombre": "URUMITA",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "44874",
+        "nombre": "VILLANUEVA",
+        "cod_depto": "44"
+    },
+    {
+        "codigo": "47001",
+        "nombre": "SANTA MARTA",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47030",
+        "nombre": "ALGARROBO",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47053",
+        "nombre": "ARACATACA",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47058",
+        "nombre": "ARIGUANÍ",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47161",
+        "nombre": "CERRO SAN ANTONIO",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47170",
+        "nombre": "CHIVOLO",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47189",
+        "nombre": "CIÉNAGA",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47205",
+        "nombre": "CONCORDIA",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47245",
+        "nombre": "EL BANCO",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47258",
+        "nombre": "EL PIÑON",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47268",
+        "nombre": "EL RETÉN",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47288",
+        "nombre": "FUNDACIÓN",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47318",
+        "nombre": "GUAMAL",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47460",
+        "nombre": "NUEVA GRANADA",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47541",
+        "nombre": "PEDRAZA",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47545",
+        "nombre": "PIJIÑO DEL CARMEN",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47551",
+        "nombre": "PIVIJAY",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47555",
+        "nombre": "PLATO",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47570",
+        "nombre": "PUEBLOVIEJO",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47605",
+        "nombre": "REMOLINO",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47660",
+        "nombre": "SABANAS DE SAN ANGEL",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47675",
+        "nombre": "SALAMINA",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47692",
+        "nombre": "SAN SEBASTIÁN DE BUENAVISTA",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47703",
+        "nombre": "SAN ZENÓN",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47707",
+        "nombre": "SANTA ANA",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47720",
+        "nombre": "SANTA BÁRBARA DE PINTO",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47745",
+        "nombre": "SITIONUEVO",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47798",
+        "nombre": "TENERIFE",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47960",
+        "nombre": "ZAPAYÁN",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "47980",
+        "nombre": "ZONA BANANERA",
+        "cod_depto": "47"
+    },
+    {
+        "codigo": "50001",
+        "nombre": "VILLAVICENCIO",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50006",
+        "nombre": "ACACÍAS",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50110",
+        "nombre": "BARRANCA DE UPÍA",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50124",
+        "nombre": "CABUYARO",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50150",
+        "nombre": "CASTILLA LA NUEVA",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50223",
+        "nombre": "SAN LUIS DE CUBARRAL",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50226",
+        "nombre": "CUMARAL",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50245",
+        "nombre": "EL CALVARIO",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50251",
+        "nombre": "EL CASTILLO",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50270",
+        "nombre": "EL DORADO",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50287",
+        "nombre": "FUENTE DE ORO",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50313",
+        "nombre": "GRANADA",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50318",
+        "nombre": "GUAMAL",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50325",
+        "nombre": "MAPIRIPÁN",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50330",
+        "nombre": "MESETAS",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50350",
+        "nombre": "LA MACARENA",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50370",
+        "nombre": "URIBE",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50400",
+        "nombre": "LEJANÍAS",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50450",
+        "nombre": "PUERTO CONCORDIA",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50568",
+        "nombre": "PUERTO GAITÁN",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50573",
+        "nombre": "PUERTO LÓPEZ",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50577",
+        "nombre": "PUERTO LLERAS",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50590",
+        "nombre": "PUERTO RICO",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50606",
+        "nombre": "RESTREPO",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50680",
+        "nombre": "SAN CARLOS DE GUAROA",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50683",
+        "nombre": "SAN JUAN DE ARAMA",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50686",
+        "nombre": "SAN JUANITO",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50689",
+        "nombre": "SAN MARTÍN",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "50711",
+        "nombre": "VISTAHERMOSA",
+        "cod_depto": "50"
+    },
+    {
+        "codigo": "52001",
+        "nombre": "PASTO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52019",
+        "nombre": "ALBÁN",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52022",
+        "nombre": "ALDANA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52036",
+        "nombre": "ANCUYÁ",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52051",
+        "nombre": "ARBOLEDA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52079",
+        "nombre": "BARBACOAS",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52083",
+        "nombre": "BELÉN",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52110",
+        "nombre": "BUESACO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52203",
+        "nombre": "COLÓN",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52207",
+        "nombre": "CONSACÁ",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52210",
+        "nombre": "CONTADERO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52215",
+        "nombre": "CÓRDOBA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52224",
+        "nombre": "CUASPUD",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52227",
+        "nombre": "CUMBAL",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52233",
+        "nombre": "CUMBITARA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52240",
+        "nombre": "CHACHAGÜÍ",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52250",
+        "nombre": "EL CHARCO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52254",
+        "nombre": "EL PEÑOL",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52256",
+        "nombre": "EL ROSARIO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52258",
+        "nombre": "EL TABLÓN DE GÓMEZ",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52260",
+        "nombre": "EL TAMBO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52287",
+        "nombre": "FUNES",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52317",
+        "nombre": "GUACHUCAL",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52320",
+        "nombre": "GUAITARILLA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52323",
+        "nombre": "GUALMATÁN",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52352",
+        "nombre": "ILES",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52354",
+        "nombre": "IMUÉS",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52356",
+        "nombre": "IPIALES",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52378",
+        "nombre": "LA CRUZ",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52381",
+        "nombre": "LA FLORIDA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52385",
+        "nombre": "LA LLANADA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52390",
+        "nombre": "LA TOLA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52399",
+        "nombre": "LA UNIÓN",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52405",
+        "nombre": "LEIVA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52411",
+        "nombre": "LINARES",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52418",
+        "nombre": "LOS ANDES",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52427",
+        "nombre": "MAGÜI",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52435",
+        "nombre": "MALLAMA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52473",
+        "nombre": "MOSQUERA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52480",
+        "nombre": "NARIÑO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52490",
+        "nombre": "OLAYA HERRERA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52506",
+        "nombre": "OSPINA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52520",
+        "nombre": "FRANCISCO PIZARRO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52540",
+        "nombre": "POLICARPA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52560",
+        "nombre": "POTOSÍ",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52565",
+        "nombre": "PROVIDENCIA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52573",
+        "nombre": "PUERRES",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52585",
+        "nombre": "PUPIALES",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52612",
+        "nombre": "RICAURTE",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52621",
+        "nombre": "ROBERTO PAYÁN",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52678",
+        "nombre": "SAMANIEGO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52683",
+        "nombre": "SANDONÁ",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52685",
+        "nombre": "SAN BERNARDO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52687",
+        "nombre": "SAN LORENZO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52693",
+        "nombre": "SAN PABLO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52694",
+        "nombre": "SAN PEDRO DE CARTAGO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52696",
+        "nombre": "SANTA BÁRBARA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52699",
+        "nombre": "SANTACRUZ",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52720",
+        "nombre": "SAPUYES",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52786",
+        "nombre": "TAMINANGO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52788",
+        "nombre": "TANGUA",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52835",
+        "nombre": "SAN ANDRES DE TUMACO",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52838",
+        "nombre": "TÚQUERRES",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "52885",
+        "nombre": "YACUANQUER",
+        "cod_depto": "52"
+    },
+    {
+        "codigo": "54001",
+        "nombre": "CÚCUTA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54003",
+        "nombre": "ABREGO",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54051",
+        "nombre": "ARBOLEDAS",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54099",
+        "nombre": "BOCHALEMA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54109",
+        "nombre": "BUCARASICA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54125",
+        "nombre": "CÁCOTA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54128",
+        "nombre": "CACHIRÁ",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54172",
+        "nombre": "CHINÁCOTA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54174",
+        "nombre": "CHITAGÁ",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54206",
+        "nombre": "CONVENCIÓN",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54223",
+        "nombre": "CUCUTILLA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54239",
+        "nombre": "DURANIA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54245",
+        "nombre": "EL CARMEN",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54250",
+        "nombre": "EL TARRA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54261",
+        "nombre": "EL ZULIA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54313",
+        "nombre": "GRAMALOTE",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54344",
+        "nombre": "HACARÍ",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54347",
+        "nombre": "HERRÁN",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54377",
+        "nombre": "LABATECA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54385",
+        "nombre": "LA ESPERANZA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54398",
+        "nombre": "LA PLAYA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54405",
+        "nombre": "LOS PATIOS",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54418",
+        "nombre": "LOURDES",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54480",
+        "nombre": "MUTISCUA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54498",
+        "nombre": "OCAÑA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54518",
+        "nombre": "PAMPLONA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54520",
+        "nombre": "PAMPLONITA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54553",
+        "nombre": "PUERTO SANTANDER",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54599",
+        "nombre": "RAGONVALIA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54660",
+        "nombre": "SALAZAR",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54670",
+        "nombre": "SAN CALIXTO",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54673",
+        "nombre": "SAN CAYETANO",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54680",
+        "nombre": "SANTIAGO",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54720",
+        "nombre": "SARDINATA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54743",
+        "nombre": "SILOS",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54800",
+        "nombre": "TEORAMA",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54810",
+        "nombre": "TIBÚ",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54820",
+        "nombre": "TOLEDO",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54871",
+        "nombre": "VILLA CARO",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "54874",
+        "nombre": "VILLA DEL ROSARIO",
+        "cod_depto": "54"
+    },
+    {
+        "codigo": "63001",
+        "nombre": "ARMENIA",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "63111",
+        "nombre": "BUENAVISTA",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "63130",
+        "nombre": "CALARCÁ",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "63190",
+        "nombre": "CIRCASIA",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "63212",
+        "nombre": "CÓRDOBA",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "63272",
+        "nombre": "FILANDIA",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "63302",
+        "nombre": "GÉNOVA",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "63401",
+        "nombre": "LA TEBAIDA",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "63470",
+        "nombre": "MONTENEGRO",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "63548",
+        "nombre": "PIJAO",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "63594",
+        "nombre": "QUIMBAYA",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "63690",
+        "nombre": "SALENTO",
+        "cod_depto": "63"
+    },
+    {
+        "codigo": "66001",
+        "nombre": "PEREIRA",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66045",
+        "nombre": "APÍA",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66075",
+        "nombre": "BALBOA",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66088",
+        "nombre": "BELÉN DE UMBRÍA",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66170",
+        "nombre": "DOSQUEBRADAS",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66318",
+        "nombre": "GUÁTICA",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66383",
+        "nombre": "LA CELIA",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66400",
+        "nombre": "LA VIRGINIA",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66440",
+        "nombre": "MARSELLA",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66456",
+        "nombre": "MISTRATÓ",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66572",
+        "nombre": "PUEBLO RICO",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66594",
+        "nombre": "QUINCHÍA",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66682",
+        "nombre": "SANTA ROSA DE CABAL",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "66687",
+        "nombre": "SANTUARIO",
+        "cod_depto": "66"
+    },
+    {
+        "codigo": "68001",
+        "nombre": "BUCARAMANGA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68013",
+        "nombre": "AGUADA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68020",
+        "nombre": "ALBANIA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68051",
+        "nombre": "ARATOCA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68077",
+        "nombre": "BARBOSA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68079",
+        "nombre": "BARICHARA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68081",
+        "nombre": "BARRANCABERMEJA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68092",
+        "nombre": "BETULIA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68101",
+        "nombre": "BOLÍVAR",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68121",
+        "nombre": "CABRERA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68132",
+        "nombre": "CALIFORNIA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68147",
+        "nombre": "CAPITANEJO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68152",
+        "nombre": "CARCASÍ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68160",
+        "nombre": "CEPITÁ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68162",
+        "nombre": "CERRITO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68167",
+        "nombre": "CHARALÁ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68169",
+        "nombre": "CHARTA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68176",
+        "nombre": "CHIMA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68179",
+        "nombre": "CHIPATÁ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68190",
+        "nombre": "CIMITARRA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68207",
+        "nombre": "CONCEPCIÓN",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68209",
+        "nombre": "CONFINES",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68211",
+        "nombre": "CONTRATACIÓN",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68217",
+        "nombre": "COROMORO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68229",
+        "nombre": "CURITÍ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68235",
+        "nombre": "EL CARMEN DE CHUCURÍ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68245",
+        "nombre": "EL GUACAMAYO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68250",
+        "nombre": "EL PEÑÓN",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68255",
+        "nombre": "EL PLAYÓN",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68264",
+        "nombre": "ENCINO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68266",
+        "nombre": "ENCISO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68271",
+        "nombre": "FLORIÁN",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68276",
+        "nombre": "FLORIDABLANCA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68296",
+        "nombre": "GALÁN",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68298",
+        "nombre": "GAMBITA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68307",
+        "nombre": "GIRÓN",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68318",
+        "nombre": "GUACA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68320",
+        "nombre": "GUADALUPE",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68322",
+        "nombre": "GUAPOTÁ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68324",
+        "nombre": "GUAVATÁ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68327",
+        "nombre": "GÜEPSA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68344",
+        "nombre": "HATO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68368",
+        "nombre": "JESÚS MARÍA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68370",
+        "nombre": "JORDÁN",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68377",
+        "nombre": "LA BELLEZA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68385",
+        "nombre": "LANDÁZURI",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68397",
+        "nombre": "LA PAZ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68406",
+        "nombre": "LEBRIJA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68418",
+        "nombre": "LOS SANTOS",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68425",
+        "nombre": "MACARAVITA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68432",
+        "nombre": "MÁLAGA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68444",
+        "nombre": "MATANZA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68464",
+        "nombre": "MOGOTES",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68468",
+        "nombre": "MOLAGAVITA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68498",
+        "nombre": "OCAMONTE",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68500",
+        "nombre": "OIBA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68502",
+        "nombre": "ONZAGA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68522",
+        "nombre": "PALMAR",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68524",
+        "nombre": "PALMAS DEL SOCORRO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68533",
+        "nombre": "PÁRAMO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68547",
+        "nombre": "PIEDECUESTA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68549",
+        "nombre": "PINCHOTE",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68572",
+        "nombre": "PUENTE NACIONAL",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68573",
+        "nombre": "PUERTO PARRA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68575",
+        "nombre": "PUERTO WILCHES",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68615",
+        "nombre": "RIONEGRO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68655",
+        "nombre": "SABANA DE TORRES",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68669",
+        "nombre": "SAN ANDRÉS",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68673",
+        "nombre": "SAN BENITO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68679",
+        "nombre": "SAN GIL",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68682",
+        "nombre": "SAN JOAQUÍN",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68684",
+        "nombre": "SAN JOSÉ DE MIRANDA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68686",
+        "nombre": "SAN MIGUEL",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68689",
+        "nombre": "SAN VICENTE DE CHUCURÍ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68705",
+        "nombre": "SANTA BÁRBARA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68720",
+        "nombre": "SANTA HELENA DEL OPÓN",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68745",
+        "nombre": "SIMACOTA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68755",
+        "nombre": "SOCORRO",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68770",
+        "nombre": "SUAITA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68773",
+        "nombre": "SUCRE",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68780",
+        "nombre": "SURATÁ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68820",
+        "nombre": "TONA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68855",
+        "nombre": "VALLE DE SAN JOSÉ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68861",
+        "nombre": "VÉLEZ",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68867",
+        "nombre": "VETAS",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68872",
+        "nombre": "VILLANUEVA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "68895",
+        "nombre": "ZAPATOCA",
+        "cod_depto": "68"
+    },
+    {
+        "codigo": "70001",
+        "nombre": "SINCELEJO",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70110",
+        "nombre": "BUENAVISTA",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70124",
+        "nombre": "CAIMITO",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70204",
+        "nombre": "COLOSO",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70215",
+        "nombre": "COROZAL",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70221",
+        "nombre": "COVEÑAS",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70230",
+        "nombre": "CHALÁN",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70233",
+        "nombre": "EL ROBLE",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70235",
+        "nombre": "GALERAS",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70265",
+        "nombre": "GUARANDA",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70400",
+        "nombre": "LA UNIÓN",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70418",
+        "nombre": "LOS PALMITOS",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70429",
+        "nombre": "MAJAGUAL",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70473",
+        "nombre": "MORROA",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70508",
+        "nombre": "OVEJAS",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70523",
+        "nombre": "PALMITO",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70670",
+        "nombre": "SAMPUÉS",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70678",
+        "nombre": "SAN BENITO ABAD",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70702",
+        "nombre": "SAN JUAN DE BETULIA",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70708",
+        "nombre": "SAN MARCOS",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70713",
+        "nombre": "SAN ONOFRE",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70717",
+        "nombre": "SAN PEDRO",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70742",
+        "nombre": "SAN LUIS DE SINCÉ",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70771",
+        "nombre": "SUCRE",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70820",
+        "nombre": "SANTIAGO DE TOLÚ",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "70823",
+        "nombre": "TOLÚ VIEJO",
+        "cod_depto": "70"
+    },
+    {
+        "codigo": "73001",
+        "nombre": "IBAGUÉ",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73024",
+        "nombre": "ALPUJARRA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73026",
+        "nombre": "ALVARADO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73030",
+        "nombre": "AMBALEMA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73043",
+        "nombre": "ANZOÁTEGUI",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73055",
+        "nombre": "ARMERO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73067",
+        "nombre": "ATACO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73124",
+        "nombre": "CAJAMARCA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73148",
+        "nombre": "CARMEN DE APICALÁ",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73152",
+        "nombre": "CASABIANCA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73168",
+        "nombre": "CHAPARRAL",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73200",
+        "nombre": "COELLO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73217",
+        "nombre": "COYAIMA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73226",
+        "nombre": "CUNDAY",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73236",
+        "nombre": "DOLORES",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73268",
+        "nombre": "ESPINAL",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73270",
+        "nombre": "FALAN",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73275",
+        "nombre": "FLANDES",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73283",
+        "nombre": "FRESNO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73319",
+        "nombre": "GUAMO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73347",
+        "nombre": "HERVEO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73349",
+        "nombre": "HONDA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73352",
+        "nombre": "ICONONZO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73408",
+        "nombre": "LÉRIDA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73411",
+        "nombre": "LÍBANO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73443",
+        "nombre": "SAN SEBASTIÁN DE MARIQUITA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73449",
+        "nombre": "MELGAR",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73461",
+        "nombre": "MURILLO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73483",
+        "nombre": "NATAGAIMA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73504",
+        "nombre": "ORTEGA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73520",
+        "nombre": "PALOCABILDO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73547",
+        "nombre": "PIEDRAS",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73555",
+        "nombre": "PLANADAS",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73563",
+        "nombre": "PRADO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73585",
+        "nombre": "PURIFICACIÓN",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73616",
+        "nombre": "RIOBLANCO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73622",
+        "nombre": "RONCESVALLES",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73624",
+        "nombre": "ROVIRA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73671",
+        "nombre": "SALDAÑA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73675",
+        "nombre": "SAN ANTONIO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73678",
+        "nombre": "SAN LUIS",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73686",
+        "nombre": "SANTA ISABEL",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73770",
+        "nombre": "SUÁREZ",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73854",
+        "nombre": "VALLE DE SAN JUAN",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73861",
+        "nombre": "VENADILLO",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73870",
+        "nombre": "VILLAHERMOSA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "73873",
+        "nombre": "VILLARRICA",
+        "cod_depto": "73"
+    },
+    {
+        "codigo": "76001",
+        "nombre": "CALI",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76020",
+        "nombre": "ALCALÁ",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76036",
+        "nombre": "ANDALUCÍA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76041",
+        "nombre": "ANSERMANUEVO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76054",
+        "nombre": "ARGELIA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76100",
+        "nombre": "BOLÍVAR",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76109",
+        "nombre": "BUENAVENTURA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76111",
+        "nombre": "GUADALAJARA DE BUGA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76113",
+        "nombre": "BUGALAGRANDE",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76122",
+        "nombre": "CAICEDONIA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76126",
+        "nombre": "CALIMA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76130",
+        "nombre": "CANDELARIA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76147",
+        "nombre": "CARTAGO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76233",
+        "nombre": "DAGUA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76243",
+        "nombre": "EL ÁGUILA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76246",
+        "nombre": "EL CAIRO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76248",
+        "nombre": "EL CERRITO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76250",
+        "nombre": "EL DOVIO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76275",
+        "nombre": "FLORIDA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76306",
+        "nombre": "GINEBRA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76318",
+        "nombre": "GUACARÍ",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76364",
+        "nombre": "JAMUNDÍ",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76377",
+        "nombre": "LA CUMBRE",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76400",
+        "nombre": "LA UNIÓN",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76403",
+        "nombre": "LA VICTORIA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76497",
+        "nombre": "OBANDO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76520",
+        "nombre": "PALMIRA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76563",
+        "nombre": "PRADERA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76606",
+        "nombre": "RESTREPO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76616",
+        "nombre": "RIOFRÍO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76622",
+        "nombre": "ROLDANILLO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76670",
+        "nombre": "SAN PEDRO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76736",
+        "nombre": "SEVILLA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76823",
+        "nombre": "TORO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76828",
+        "nombre": "TRUJILLO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76834",
+        "nombre": "TULUÁ",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76845",
+        "nombre": "ULLOA",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76863",
+        "nombre": "VERSALLES",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76869",
+        "nombre": "VIJES",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76890",
+        "nombre": "YOTOCO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76892",
+        "nombre": "YUMBO",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "76895",
+        "nombre": "ZARZAL",
+        "cod_depto": "76"
+    },
+    {
+        "codigo": "81001",
+        "nombre": "ARAUCA",
+        "cod_depto": "81"
+    },
+    {
+        "codigo": "81065",
+        "nombre": "ARAUQUITA",
+        "cod_depto": "81"
+    },
+    {
+        "codigo": "81220",
+        "nombre": "CRAVO NORTE",
+        "cod_depto": "81"
+    },
+    {
+        "codigo": "81300",
+        "nombre": "FORTUL",
+        "cod_depto": "81"
+    },
+    {
+        "codigo": "81591",
+        "nombre": "PUERTO RONDÓN",
+        "cod_depto": "81"
+    },
+    {
+        "codigo": "81736",
+        "nombre": "SARAVENA",
+        "cod_depto": "81"
+    },
+    {
+        "codigo": "81794",
+        "nombre": "TAME",
+        "cod_depto": "81"
+    },
+    {
+        "codigo": "85001",
+        "nombre": "YOPAL",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85010",
+        "nombre": "AGUAZUL",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85015",
+        "nombre": "CHAMEZA",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85125",
+        "nombre": "HATO COROZAL",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85136",
+        "nombre": "LA SALINA",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85139",
+        "nombre": "MANÍ",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85162",
+        "nombre": "MONTERREY",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85225",
+        "nombre": "NUNCHÍA",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85230",
+        "nombre": "OROCUÉ",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85250",
+        "nombre": "PAZ DE ARIPORO",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85263",
+        "nombre": "PORE",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85279",
+        "nombre": "RECETOR",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85300",
+        "nombre": "SABANALARGA",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85315",
+        "nombre": "SÁCAMA",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85325",
+        "nombre": "SAN LUIS DE PALENQUE",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85400",
+        "nombre": "TÁMARA",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85410",
+        "nombre": "TAURAMENA",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85430",
+        "nombre": "TRINIDAD",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "85440",
+        "nombre": "VILLANUEVA",
+        "cod_depto": "85"
+    },
+    {
+        "codigo": "86001",
+        "nombre": "MOCOA",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86219",
+        "nombre": "COLÓN",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86320",
+        "nombre": "ORITO",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86568",
+        "nombre": "PUERTO ASÍS",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86569",
+        "nombre": "PUERTO CAICEDO",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86571",
+        "nombre": "PUERTO GUZMÁN",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86573",
+        "nombre": "PUERTO LEGUÍZAMO",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86749",
+        "nombre": "SIBUNDOY",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86755",
+        "nombre": "SAN FRANCISCO",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86757",
+        "nombre": "SAN MIGUEL",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86760",
+        "nombre": "SANTIAGO",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86865",
+        "nombre": "VALLE DEL GUAMUEZ",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "86885",
+        "nombre": "VILLAGARZÓN",
+        "cod_depto": "86"
+    },
+    {
+        "codigo": "88001",
+        "nombre": "Archipiélago de San Andrés, Providencia y Santa Catalina / SAN ANDRÉS",
+        "cod_depto": "88"
+    },
+    {
+        "codigo": "88564",
+        "nombre": "Archipiélago de San Andrés, Providencia y Santa Catalina / PROVIDENCIA",
+        "cod_depto": "88"
+    },
+    {
+        "codigo": "91001",
+        "nombre": "LETICIA",
+        "cod_depto": "91"
+    },
+    {
+        "codigo": "91263",
+        "nombre": "EL ENCANTO",
+        "cod_depto": "91"
+    },
+    {
+        "codigo": "91405",
+        "nombre": "LA CHORRERA",
+        "cod_depto": "91"
+    },
+    {
+        "codigo": "91407",
+        "nombre": "LA PEDRERA",
+        "cod_depto": "91"
+    },
+    {
+        "codigo": "91430",
+        "nombre": "LA VICTORIA",
+        "cod_depto": "91"
+    },
+    {
+        "codigo": "91460",
+        "nombre": "MIRITI - PARANÁ",
+        "cod_depto": "91"
+    },
+    {
+        "codigo": "91530",
+        "nombre": "PUERTO ALEGRÍA",
+        "cod_depto": "91"
+    },
+    {
+        "codigo": "91536",
+        "nombre": "PUERTO ARICA",
+        "cod_depto": "91"
+    },
+    {
+        "codigo": "91540",
+        "nombre": "PUERTO NARIÑO",
+        "cod_depto": "91"
+    },
+    {
+        "codigo": "91669",
+        "nombre": "PUERTO SANTANDER",
+        "cod_depto": "91"
+    },
+    {
+        "codigo": "91798",
+        "nombre": "TARAPACÁ",
+        "cod_depto": "91"
+    },
+    {
+        "codigo": "94001",
+        "nombre": "INÍRIDA",
+        "cod_depto": "94"
+    },
+    {
+        "codigo": "94343",
+        "nombre": "BARRANCO MINAS",
+        "cod_depto": "94"
+    },
+    {
+        "codigo": "94663",
+        "nombre": "MAPIRIPANA",
+        "cod_depto": "94"
+    },
+    {
+        "codigo": "94883",
+        "nombre": "SAN FELIPE",
+        "cod_depto": "94"
+    },
+    {
+        "codigo": "94884",
+        "nombre": "PUERTO COLOMBIA",
+        "cod_depto": "94"
+    },
+    {
+        "codigo": "94885",
+        "nombre": "LA GUADALUPE",
+        "cod_depto": "94"
+    },
+    {
+        "codigo": "94886",
+        "nombre": "CACAHUAL",
+        "cod_depto": "94"
+    },
+    {
+        "codigo": "94887",
+        "nombre": "PANA PANA",
+        "cod_depto": "94"
+    },
+    {
+        "codigo": "94888",
+        "nombre": "MORICHAL",
+        "cod_depto": "94"
+    },
+    {
+        "codigo": "95001",
+        "nombre": "SAN JOSÉ DEL GUAVIARE",
+        "cod_depto": "95"
+    },
+    {
+        "codigo": "95015",
+        "nombre": "CALAMAR",
+        "cod_depto": "95"
+    },
+    {
+        "codigo": "95025",
+        "nombre": "EL RETORNO",
+        "cod_depto": "95"
+    },
+    {
+        "codigo": "95200",
+        "nombre": "MIRAFLORES",
+        "cod_depto": "95"
+    },
+    {
+        "codigo": "97001",
+        "nombre": "MITÚ",
+        "cod_depto": "97"
+    },
+    {
+        "codigo": "97161",
+        "nombre": "CARURU",
+        "cod_depto": "97"
+    },
+    {
+        "codigo": "97511",
+        "nombre": "PACOA",
+        "cod_depto": "97"
+    },
+    {
+        "codigo": "97666",
+        "nombre": "TARAIRA",
+        "cod_depto": "97"
+    },
+    {
+        "codigo": "97777",
+        "nombre": "PAPUNAUA",
+        "cod_depto": "97"
+    },
+    {
+        "codigo": "97889",
+        "nombre": "YAVARATÉ",
+        "cod_depto": "97"
+    },
+    {
+        "codigo": "99001",
+        "nombre": "PUERTO CARREÑO",
+        "cod_depto": "99"
+    },
+    {
+        "codigo": "99524",
+        "nombre": "LA PRIMAVERA",
+        "cod_depto": "99"
+    },
+    {
+        "codigo": "99624",
+        "nombre": "SANTA ROSALÍA",
+        "cod_depto": "99"
+    },
+    {
+        "codigo": "99773",
+        "nombre": "CUMARIBO",
+        "cod_depto": "99"
+    }
+]

@@ -1,0 +1,125 @@
+﻿@model ElefantesBlancosDatos.Models.stra_usuarios
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>stra_usuarios</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.id_stra_usuario)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.id_stra_usuario)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.usuario)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.usuario)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.contrasena)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.contrasena)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.nombres)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.nombres)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.segundo_nombre)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.segundo_nombre)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.apellidos)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.apellidos)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.segundo_apellido)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.segundo_apellido)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.correo_electronico)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.correo_electronico)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.entidad)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.entidad)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.cargo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.cargo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.celular)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.celular)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.telefono)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.telefono)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.stra_grupos.descripcion)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.stra_grupos.descripcion)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.primera_vez)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.primera_vez)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.estado)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.estado)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

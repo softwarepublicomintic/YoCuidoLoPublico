@@ -1,0 +1,167 @@
+﻿[
+    {
+        "codigo": "05",
+        "nombre": "ANTIOQUIA",
+        "cod_region": "2"
+    },
+    {
+        "codigo": "08",
+        "nombre": "ATLÁNTICO",
+        "cod_region": "1"
+    },
+    {
+        "codigo": "11",
+        "nombre": "BOGOTÁ",
+        "cod_region": "2"
+    },
+    {
+        "codigo": "13",
+        "nombre": "BOLÍVAR",
+        "cod_region": "1"
+    },
+    {
+        "codigo": "15",
+        "nombre": "BOYACÁ",
+        "cod_region": "2"
+    },
+    {
+        "codigo": "17",
+        "nombre": "CALDAS",
+        "cod_region": "2"
+    },
+    {
+        "codigo": "18",
+        "nombre": "CAQUETÁ",
+        "cod_region": "5"
+    },
+    {
+        "codigo": "19",
+        "nombre": "CAUCA",
+        "cod_region": "3"
+    },
+    {
+        "codigo": "20",
+        "nombre": "CESAR",
+        "cod_region": "1"
+    },
+    {
+        "codigo": "23",
+        "nombre": "CÓRDOBA",
+        "cod_region": "1"
+    },
+    {
+        "codigo": "25",
+        "nombre": "CUNDINAMARCA",
+        "cod_region": "2"
+    },
+    {
+        "codigo": "27",
+        "nombre": "CHOCÓ",
+        "cod_region": "3"
+    },
+    {
+        "codigo": "41",
+        "nombre": "HUILA",
+        "cod_region": "2"
+    },
+    {
+        "codigo": "44",
+        "nombre": "LA GUAJIRA",
+        "cod_region": "1"
+    },
+    {
+        "codigo": "47",
+        "nombre": "MAGDALENA",
+        "cod_region": "1"
+    },
+    {
+        "codigo": "50",
+        "nombre": "META",
+        "cod_region": "4"
+    },
+    {
+        "codigo": "52",
+        "nombre": "NARIÑO",
+        "cod_region": "3"
+    },
+    {
+        "codigo": "54",
+        "nombre": "NORTE DE SANTANDER",
+        "cod_region": "2"
+    },
+    {
+        "codigo": "63",
+        "nombre": "QUINDÍO",
+        "cod_region": "2"
+    },
+    {
+        "codigo": "66",
+        "nombre": "RISARALDA",
+        "cod_region": "2"
+    },
+    {
+        "codigo": "68",
+        "nombre": "SANTANDER",
+        "cod_region": "2"
+    },
+    {
+        "codigo": "70",
+        "nombre": "SUCRE",
+        "cod_region": "1"
+    },
+    {
+        "codigo": "73",
+        "nombre": "TOLIMA",
+        "cod_region": "2"
+    },
+    {
+        "codigo": "76",
+        "nombre": "VALLE DEL CAUCA",
+        "cod_region": "3"
+    },
+    {
+        "codigo": "81",
+        "nombre": "ARAUCA",
+        "cod_region": "4"
+    },
+    {
+        "codigo": "85",
+        "nombre": "CASANARE",
+        "cod_region": "4"
+    },
+    {
+        "codigo": "86",
+        "nombre": "PUTUMAYO",
+        "cod_region": "5"
+    },
+    {
+        "codigo": "88",
+        "nombre": "SAN ANDRÉS Y PROVIDENCIA",
+        "cod_region": "6"
+    },
+    {
+        "codigo": "91",
+        "nombre": "AMAZONAS",
+        "cod_region": "5"
+    },
+    {
+        "codigo": "94",
+        "nombre": "GUAINÍA",
+        "cod_region": "5"
+    },
+    {
+        "codigo": "95",
+        "nombre": "GUAVIARE",
+        "cod_region": "5"
+    },
+    {
+        "codigo": "97",
+        "nombre": "VAUPÉS",
+        "cod_region": "5"
+    },
+    {
+        "codigo": "99",
+        "nombre": "VICHADA",
+        "cod_region": "4"
+    }
+]

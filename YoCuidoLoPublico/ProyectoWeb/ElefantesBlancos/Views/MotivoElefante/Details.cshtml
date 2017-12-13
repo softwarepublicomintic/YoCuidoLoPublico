@@ -1,0 +1,30 @@
+﻿@model ElefantesBlancosDatos.Models.stra_motivos_elefante
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>stra_motivos_elefante</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.id_stra_motivo_elefante)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.id_stra_motivo_elefante)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.motivo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.motivo)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

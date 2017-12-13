@@ -1,0 +1,236 @@
+﻿@model ElefantesBlancosDatos.Models.stra_imagenes
+
+@{
+    ViewBag.Title = "Aprobación de Fotos Pendientes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+    $(function ValidarFotoImagen() {
+        $("input[name*='estado_imagen']").click(function () {
+            var varimagen = $("input[name='estado_imagen']:checked").val();
+            if (varimagen == "1") {
+                $("#id_stra_razon_rechazo").prop('disabled', 'disabled');
+                $("#razon_rechazo").prop('disabled', 'disabled');
+            }
+            else {
+                $("#id_stra_razon_rechazo").removeAttr("disabled");
+                $("#razon_rechazo").removeAttr("disabled");
+            }
+        });
+    });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            type: "POST",
+            url: "/Imagen/GetImage",
+            data: "{}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data) {
+                if (data) {
+                    console.log(data);
+                    $("#slider").ImageSliderControl({
+                        sliderbackgroundimage: data.ImageBig[0].Route,
+                        sliderPrevIdsliderPrevShow: false,
+                        slidernumImages: data.ImageBig.length - 1,
+                        sliderTittle: "",
+                        sliderPrevImage: "url('../Images/estilos_eb/flecha_izquierda_popup.png')",
+                        sliderPrevHoverImage: "url('../Images/estilos_eb/flecha_izquierda_popup.png')",
+                        sliderNextImage: "url('../Images/estilos_eb/flecha_derecha_grande.png')",
+                        sliderNextHoverImage: "url('../Images/estilos_eb/flecha_derecha_grande.png')",
+                        sliderShow: "none",
+                        sliderName: "slider",
+                        sliderImgClose: "url('../Images/estilos_eb/icono_cerrar_ventana.png')",
+                        sliderData: data.ImageBig,
+                        sliderDataShort: data.ImageShort,
+                        sliderImageId: data.ImageBig[0].Id,
+                        sliderIsprincipal: data.ImageBig[0].Isprincipal,
+                        sliderPreviewControlId: "preview-img",
+                        sliderCheckBoxName: "ChkPrincipal",
+                        sliderCameraImg: "../Images/estilos_eb/icono_camara_foto_principal.png",
+                        sliderControllerUpdate: "/Imagen/UpdateImage"
+                    });
+                }
+
+            }
+        });
+
+    });
+</script>
+<script>
+    $(function () {
+        if ('@ViewBag.Aprobar' == "1") {
+            Validacionaprobacion();
+        }
+        else if ('@ViewBag.Rechazar' == "1") {
+            Validacionrechazo();
+        }
+    });
+
+</script>
+<script>
+    function Validacionaprobacion() {
+        $("#dialogo-aprobacion").dialog({
+            resizable: false,
+            height: 240,
+            modal: true,
+            buttons: {
+                "Aceptar": function () {
+                    $(this).dialog("close");
+
+                    return true;
+                }
+
+            }
+        });
+        return false;
+    }
+</script>
+<script>
+    function Validacionrechazo() {
+        $("#dialogo-rechazo").dialog({
+            resizable: false,
+            height: 240,
+            modal: true,
+            buttons: {
+                "Aceptar": function () {
+                    $(this).dialog("close");
+
+                    return true;
+                }
+
+            }
+        });
+        return false;
+    }
+</script>
+<div class="body_admin">
+    <div class="contenido_body_admin">
+        <div class="contenedor_general">
+            <div class="contenedor2">
+                <div class="titulo_contenedor">Aprobación de Fotos Pendientes</div>
+                @using (Html.BeginForm())
+                {
+                    @Html.ValidationSummary(true)
+  
+                    <div class="contenido">
+                        <fieldset>
+                            <legend>stra_imagenes</legend>
+                            @Html.HiddenFor(model => model.id_stra_imagen)
+                            <div id="estado_detalle">
+                                <h5>Estado</h5>@ViewBag.Estado
+                            </div>
+                            <div id="encabezado_detalle1">
+                                <h5>Ubicación</h5>@ViewBag.Ubicacion
+                            </div>
+                            <div id="encabezado_detalle2">
+                                <h5>Fecha de creación @ViewBag.Fecha.ToString("dd/MM/yyyy")</h5>
+                            </div>
+                            <div id="encabezado_detalle3">
+                                <h5>Código</h5>
+                                <h5>@ViewBag.Id</h5>
+                            </div>
+
+                            <div class="columna1">
+                                <div class="info1_elefante">
+                                    <div class="contenido_info">
+                                        <div id="contenido_info4_elefante">
+                                            <h5>Titulo del Reporte</h5>
+                                            <h5>@ViewBag.titulo</h5>
+                                        </div>
+                                    </div>
+                                    <div class="contenido_info">
+                                        <div id="contenido_info4_elefante">
+                                            <h5>Foto principal de este Reporte</h5>
+                                            <p>
+                                                <img src="@Url.Content(ViewBag.ImagenPrincipalPequena)" />
+                                                <br />
+                                        </div>
+                                    </div>
+                                    <div class="contenido_info">
+                                        @* <div id="contenido_info4_elefante">*@
+                                        <h5>Fotos relacionadas con este Reporte</h5>
+                                        <ul id="preview-img"></ul>
+                                        @* </div>*@
+                                    </div>
+                                    <div class="contenido_info">
+                                        <div id="contenido_info4_elefante">
+                                            <div id="aprobar_o_reprobar2">
+                                                <div id="radiob2">
+                                                    <ul>
+                                                        <li>
+                                                            <h5>
+                                                                @Html.RadioButtonFor(model => model.estado_imagen, 1, new { onClick = "ValidarFotoImagen()"})
+                                                                Validar esta foto</h5>
+                                                        </li>
+                                                        <li>
+                                                            <h5>@Html.RadioButtonFor(model => model.estado_imagen, 2, new { onClick = "ValidarFotoImagen()" })
+                                                                Rechazar esta foto</h5>
+                                                        </li>
+                                                    </ul>
+                                                    @Html.ValidationMessageFor(model => model.estado_imagen)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="columna2">
+                                <div class="foto_elefante_reporte1">
+                                    <img src="@Url.Content(ViewBag.RutaImagenGrande)" height="300" width="450"/>
+                                </div>
+                                <div class="no_aprobado">
+                                    <div id="contenido_info3_elefante">
+                                        <h5>Rechazo</h5>
+                                        <div class="editor-field">
+                                            @Html.DropDownList("id_stra_razon_rechazo", "Razón de Rechazo")
+                                            @Html.ValidationMessageFor(model => model.id_stra_razon_rechazo)
+                                        </div>
+                                    </div>
+                                    <div id="contenido_info3_elefante">
+                                        <h5>Otra razón de rechazo</h5>
+                                        <div class="editor-field">
+                                            @Html.TextAreaFor(model => model.razon_rechazo, new {TextBoxMode = "MultiLine", Columns = "55px", Rows = "3px",  style = "width: 350px", @maxlength = "99" })
+                                            @Html.ValidationMessageFor(model => model.razon_rechazo)
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div id="botones_aprobacion_no_aprobacion">
+                                <p>
+                                    <input type="submit" value="Publicar"  />
+                                </p>
+                                <p>
+                                    <input type="submit" name="Rechazar"  value="No Publicar" />
+                                </p>
+                            </div>
+
+                        </fieldset>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<div id="dialogo-rechazo" title="Mensaje de Validación" style="display: none;">
+    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Para rechazar la foto es necesario seleccionar la opción de rechazar la foto y la razón. Sí escoge otra razón de rechazo es obligatorio escribir un comentario. </p>
+</div>
+
+<div id="dialogo-aprobacion" title="Mensaje de Validación" style="display: none;">
+    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Para aprobar la foto  debe selecionar la opción de validar esta foto. </p>
+</div>
+
+<div id="slider"></div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

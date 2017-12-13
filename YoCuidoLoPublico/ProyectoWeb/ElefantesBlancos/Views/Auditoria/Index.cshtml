@@ -1,0 +1,247 @@
+﻿@model  PagedList.IPagedList<ElefantesBlancosDatos.Models.AuditoriaModels>
+
+
+@using PagedList.Mvc;
+
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+@{
+    ViewBag.Title = "Auditoria - Reportes Administrador";
+}
+
+<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    jQuery.browser = {};
+    (function () {
+        jQuery.browser.msie = false;
+        jQuery.browser.version = 0;
+        if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+            jQuery.browser.msie = true;
+            jQuery.browser.version = RegExp.$1;
+        }
+    })();
+</script>
+<script>
+    function validarsession() {
+
+        $.getJSON('@Url.Action("ValidarSession")', {}, function (data) {
+            if (data == '0') {
+                window.location.href = '/Account/Login'
+            }
+            else {
+                ValidandoInfo()
+            }
+
+        });
+
+    }
+
+    function ValidandoInfo() {
+
+        if ($('#AccionSelector').val() == '' && $('#titulo').val() == '') {
+            $("#dialogo-aprobacion").dialog({
+                resizable: false,
+                height: 240,
+                modal: true,
+                buttons: {
+                    "Aceptar": function () {
+                        $(this).dialog("close");
+
+                        return true;
+                    }
+
+                }
+            });
+            return false;
+        }
+        else {
+            ValidandoInfoFechas()
+        }
+    }
+
+    function ValidandoInfoFechas() {
+
+        if (($('#ReleaseDate').val() == '') || ($('#ReleaseDate1').val() == '')) {
+            $("#dialogo-validacion").dialog({
+                resizable: false,
+                height: 240,
+                modal: true,
+                buttons: {
+                    "Aceptar": function () {
+                        $(this).dialog("close");
+
+                        return true;
+                    }
+
+                }
+            });
+            return false;
+        }
+        else {
+            Validandofechas();
+        }
+    }
+    function Validandofechas() {
+
+        var dateinicio = $('#ReleaseDate').val();
+        var datefinal = $('#ReleaseDate1').val();
+        var array_fechainicio = dateinicio.split("/");
+        var array_fechafinal = datefinal.split("/");
+
+        var diainicio = array_fechainicio[0];
+        var mesinicio = (array_fechainicio[1] - 1);
+        var anoinicio = (array_fechainicio[2]);
+
+        var diafinal = array_fechafinal[0];
+        var mesfinal = (array_fechafinal[1] - 1);
+        var anofinal = (array_fechafinal[2]);
+
+        var startDate = new Date(anoinicio, mesinicio, diainicio);
+        var endDate = new Date(anofinal, mesfinal, diafinal);
+
+        if (startDate > endDate) {
+            $("#dialogo-fecha").dialog({
+                resizable: false,
+                height: 240,
+                modal: true,
+                buttons: {
+                    "Aceptar": function () {
+                        $(this).dialog("close");
+
+                        return true;
+                    }
+
+                }
+            });
+            return false;
+        }
+        else {
+            ValidandofechaHoy();
+        }
+    }
+
+    function ValidandofechaHoy() {
+
+        var dateinicio = $('#ReleaseDate').val();
+        var array_fechainicio = dateinicio.split("/");
+        var diainicio = array_fechainicio[0];
+        var mesinicio = (array_fechainicio[1] - 1);
+        var anoinicio = (array_fechainicio[2]);
+        var today = new Date();
+        var diafinal = today.getDate();
+        var mesfinal = today.getMonth(); //January is 0!
+        var anofinal = today.getFullYear();
+
+        var startDate = new Date(anoinicio, mesinicio, diainicio);
+        var endDate = new Date(anofinal, mesfinal, diafinal);
+
+        if (startDate > endDate) {
+            $("#dialogo-fechahoy").dialog({
+                resizable: false,
+                height: 240,
+                modal: true,
+                buttons: {
+                    "Aceptar": function () {
+                        $(this).dialog("close");
+
+                        return true;
+                    }
+
+                }
+            });
+            return false;
+        }
+        else {
+            ConsultarDatos();
+        }
+    }
+    function ConsultarDatos() {
+        $.ajax({
+            url: '@Url.Action("Busqueda")',
+            type: 'GET',
+            cache: false,
+            data: {
+                AccionSelector: $('#AccionSelector').val(), UsuarioSelector: $('#UsuarioSelector').val(), titulo: $('#titulo').val(),
+                inicio: $('#ReleaseDate').val(), final: $('#ReleaseDate1').val()
+            }
+        }).done(function (result) {
+            $('#container').html(result);
+        });
+    }
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        //$(".datefield").datepicker();
+        $("#ReleaseDate").datepicker({ dateFormat: "dd/mm/yy" }).val();
+        $("#ReleaseDate1").datepicker({ dateFormat: "dd/mm/yy" }).val();
+
+        if ('@ViewBag.fechainicio' != "") {
+            $('#ReleaseDate').val('@ViewBag.fechainicio');
+        }
+        if ('@ViewBag.fechafinal' != "") {
+            $('#ReleaseDate1').val('@ViewBag.fechafinal');
+        }
+    });
+</script>
+
+@*<div class="body_admin">
+    <div class="contenido_body_admin">*@
+<form method="get" action="@Url.Action("Index")" data-app-ajax="true" data-app-target="#personList">
+    <div class="contenedor_general">
+        <div class="contenedor2">
+            <div class="titulo_contenedor">Criterios de Búsqueda</div>
+            <div class="contenido">
+                <div id="criterio6">
+                    <div class="styled-select">
+                        @Html.DropDownList("AccionSelector", (SelectList)ViewBag.Accion, "Acción")
+                    </div>
+                </div>
+                <div id="criterio6">
+                    <div class="styled-select">
+                        @Html.DropDownList("UsuarioSelector", (SelectList)ViewBag.Usuario, "Gestor")
+                    </div>
+                </div>
+                <div id="criterio6">
+                    <div class="styled-select">
+                        Título: @Html.TextBox("titulo", ViewBag.buscartitulo as string)
+                    </div>
+                </div>
+                <div id="criterio6">
+                    <div class="styled-select">
+                        * Fecha Inicio
+                        <input class="datefield" data-val="true" data-val-required="Date is required" id="ReleaseDate" name="ReleaseDate" type="text" size="8" />
+                        * Fecha Final
+                        <input class="datefield" data-val="true" data-val-required="Date is required" id="ReleaseDate1" name="ReleaseDate1" type="text" size="8" />
+                    </div>
+                </div>
+                <div id="criterio6">
+                    <input type="button" name="Validado" id="Validado" value="Buscar" onclick="return validarsession()" />
+                </div>
+            </div>
+        </div>
+
+        <div id="container">
+            @Html.Partial("Listadoauditoria")
+        </div>
+    </div>
+</form>
+<div id="dialogo-aprobacion" title="Mensaje de Validación" style="display: none;">
+    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>La acción es obligatoria sólo sí el título se encuentra vacío. </p>
+</div>
+
+<div id="dialogo-validacion" title="Mensaje de Validación" style="display: none;">
+    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>La fecha inicio y la fecha final son obligatorias </p>
+</div>
+<div id="dialogo-fecha" title="Mensaje de Validación" style="display: none;">
+    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>La fecha inicial debe ser menor a la fecha final </p>
+</div>
+<div id="dialogo-fechahoy" title="Mensaje de Validación" style="display: none;">
+    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>La fecha inicial debe ser menor a la fecha actual </p>
+</div>
+@*  </div>
+</div>*@
+
+
+
+
+

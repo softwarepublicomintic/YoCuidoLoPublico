@@ -1,0 +1,315 @@
+﻿@model ElefantesBlancosDatos.Models.stra_elefantes
+
+@{
+    ViewBag.Title = "Detalle Reporte Pendiente";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/aprobadovalidate.js"></script>
+<script>
+    $(function () {
+        if ('@ViewBag.Aprobar' == "1") {
+            Validacionaprobacion();
+        }
+        else if ('@ViewBag.Rechazar' == "1") {
+            Validacionrechazo();
+        }
+
+       
+    });
+
+    function ValidaSoloNumeros() {
+        if ((event.keyCode < 48) || (event.keyCode > 57))
+            event.returnValue = false;
+    }
+
+</script>
+
+<script>
+    function Validacionaprobacion() {
+        $("#dialogo-aprobacion").dialog({
+            resizable: false,
+            height: 240,
+            modal: true,
+            buttons: {
+                "Aceptar": function () {
+                    $(this).dialog("close");
+
+                    return true;
+                }
+
+            }
+        });
+        return false;
+    }
+</script>
+
+<script>
+    function Validacionrechazo() {
+        $("#dialogo-rechazo").dialog({
+            resizable: false,
+            height: 240,
+            modal: true,
+            buttons: {
+                "Aceptar": function () {
+                    $(this).dialog("close");
+
+                    return true;
+                }
+
+            }
+        });
+        return false; //The actual submission of the form happens in the click handler for the delete button
+    }
+</script>
+
+<div class="body_admin">
+    <div class="contenido_body_admin">
+        <div class="contenedor_general">
+            <div class="contenedor2">
+                <div class="titulo_contenedor">Detalle Reporte Pendiente</div>
+                @using (Html.BeginForm())
+                {
+                    @Html.ValidationSummary(true)
+
+                    <div class="contenido">
+                        <fieldset>
+                            <legend>stra_elefantes</legend>
+
+                            @Html.HiddenFor(model => model.id_stra_elefante)
+                            @Html.HiddenFor(model => model.id_stra_imagen_principal_grande)
+                            @Html.HiddenFor(model => model.id_stra_imagen_principal_pequena)
+                            <div id="estado_detalle">
+                                <h5>Estado</h5>@ViewBag.Estado
+                            </div>
+                            <div id="encabezado_detalle1">
+                                <h5>Ubicación</h5>@ViewBag.Ubicacion
+                            </div>
+                            <div id="encabezado_detalle2">
+                                <h5>Fecha de creación</h5>@ViewBag.Fecha.ToString("dd/MM/yyyy")
+                            </div>
+                            <div id="encabezado_detalle3">
+                                <h5>Código</h5>@ViewBag.Id
+                            </div>
+                            <div class="columna1">
+                                <div class="info1_elefante">
+                                    <div class="contenido_info">
+                                        <div id="contenido_info1_elefante">
+                                            <h5>*Título del Reporte</h5>
+                                            @* <div class="editor-field">*@
+                                            @Html.TextAreaFor(model => model.titulo, new {TextBoxMode = "MultiLine", Columns = "55px", Rows = "3px",  style = "width: 250px", @maxlength = "80" })
+                                            <br />
+                                            @Html.ValidationMessageFor(model => model.titulo)
+                                            @* </div>*@
+                                        </div>
+                                        <div id="aprobar_o_reprobar">
+                                            *Validar / Rechazar
+                                             @*      <div class="editor-field">*@
+                                            <div id="aprobar_o_reprobar_radio">
+                                                @Html.RadioButtonFor(m => m.estado_titulo, 1)
+                                            </div>
+                                            <div id="aprobar_o_reprobar_radio">
+                                                @Html.RadioButtonFor(m => m.estado_titulo, 2)
+                                            </div>
+                                            @Html.ValidationMessageFor(model => model.estado_titulo)
+
+                                            @*</div>*@
+                                        </div>
+                                    </div>
+                                    <div class="contenido_info">
+                                        <div id="contenido_info1_elefante">
+                                            <h5>*Entidad Responsable</h5>
+                                            <div class="editor-field">
+                                                @Html.TextAreaFor(model => model.entidad_responsable,  new {TextBoxMode = "MultiLine", Columns = "55px", Rows = "3px",  style = "width: 250px", @maxlength = "80" })
+                                                <br />
+                                                @Html.ValidationMessageFor(model => model.entidad_responsable)
+                                            </div>
+                                        </div>
+                                        <div id="aprobar_o_reprobar">
+                                            *Validar / Rechazar
+                                             <div class="editor-field">
+                                                 <div id="aprobar_o_reprobar_radio">
+                                                     @Html.RadioButtonFor(m => m.estado_entidad, 1)
+                                                 </div>
+                                                 <div id="aprobar_o_reprobar_radio">
+                                                     @Html.RadioButtonFor(m => m.estado_entidad, 2)
+                                                 </div>
+                                                 @Html.ValidationMessageFor(model => model.estado_entidad)
+                                             </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="contenido_info">
+                                        <div id="contenido_info1_elefante">
+                                            <h5>*Porque es un Reporte</h5>
+                                            <div class="editor-field">
+                                                @Html.DropDownList("id_stra_motivo_elefante",null, new {style="width: 250px;"})
+                                                <br />
+                                                @Html.ValidationMessageFor(model => model.id_stra_motivo_elefante)
+                                            </div>
+                                        </div>
+                                        <div id="aprobar_o_reprobar">
+                                            *Validar / Rechazar
+                                             <div class="editor-field">
+                                                 <div id="aprobar_o_reprobar_radio">
+                                                     @Html.RadioButtonFor(m => m.estado_id_motivo_elefante, 1)
+                                                 </div>
+                                                 <div id="aprobar_o_reprobar_radio">
+                                                     @Html.RadioButtonFor(m => m.estado_id_motivo_elefante, 2)
+                                                 </div>
+                                                 @Html.ValidationMessageFor(model => model.estado_id_motivo_elefante)
+                                             </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="contenido_info">
+                                        <h5>&nbsp;</h5>
+                                        <h5>Información Adicional</h5>
+                                    </div>
+                                    <div class="contenido_info">
+                                        <div id="contenido_info1_elefante">
+                                            <h5>Tiempo</h5>
+                                            <div class="editor-field">
+                                                @Html.DropDownList("id_stra_rango_tiempo", String.Empty)
+                                                @Html.ValidationMessageFor(model => model.id_stra_rango_tiempo)
+                                            </div>
+                                        </div>
+                                        <div id="aprobar_o_reprobar">
+                                            Validar / Rechazar
+                                             <div class="editor-field">
+                                                 <div id="aprobar_o_reprobar_radio">
+                                                     @Html.RadioButtonFor(m => m.estado_id_rango_tiempo, 1, new { onClick = "validarestadotiempo()" })
+                                                 </div>
+                                                 <div id="aprobar_o_reprobar_radio">
+                                                     @Html.RadioButtonFor(m => m.estado_id_rango_tiempo, 2, new { onClick = "validarestadotiempo()" })
+                                                 </div>
+
+                                             </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="contenido_info">
+                                        <div id="contenido_info1_elefante">
+                                            <h5>Costo</h5>
+                                            <div class="editor-field">
+                                                @Html.TextBoxFor(model => model.costo, new { onkeypress = "ValidaSoloNumeros()", @maxlength = "18" })
+                                                @Html.ValidationMessageFor(model => model.costo, "El costo debe ser numérico")
+                                            </div>
+                                        </div>
+                                        <div id="aprobar_o_reprobar">
+                                            Validar / Rechazar
+                                             <div class="editor-field">
+                                                 <div id="aprobar_o_reprobar_radio">
+                                                     @Html.RadioButtonFor(m => m.estado_costo, 1, new { onClick = "validarestadocosto()" })
+                                                 </div>
+                                                 <div id="aprobar_o_reprobar_radio">
+                                                     @Html.RadioButtonFor(m => m.estado_costo, 2, new { onClick = "validarestadocosto()" })
+                                                 </div>
+
+                                             </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="contenido_info">
+                                        <div id="contenido_info1_elefante">
+                                            <h5>Contratista</h5>
+                                            <div class="editor-field">
+                                               @Html.TextAreaFor(model => model.contratista,  new {TextBoxMode = "MultiLine", Columns = "55px", Rows = "3px",  style = "width: 250px", @maxlength = "80" })
+                                                <br />
+                                                @Html.ValidationMessageFor(model => model.contratista)
+                                            </div>
+                                        </div>
+                                        <div id="aprobar_o_reprobar">
+                                            Validar / Rechazar
+                                             <div class="editor-field">
+                                                 <div id="aprobar_o_reprobar_radio">
+                                                     @Html.RadioButtonFor(m => m.estado_contratista, 1, new { onClick = "validarestadocontratista()" })
+                                                 </div>
+                                                 <div id="aprobar_o_reprobar_radio">
+                                                     @Html.RadioButtonFor(m => m.estado_contratista, 2, new { onClick = "validarestadocontratista()" })
+                                                 </div>
+
+                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columna2">
+                                <div class="foto_elefante_reporte1">
+                                    <img src="@Url.Content(ViewBag.ruta)"  width="450"  height="300"  />
+                                </div>
+                                <div class="contenido_info">
+                                    <div class="editor-field">
+                                        <div id="contenido_info2_elefante">
+                                            <div id="aprobar_o_reprobar_radio">
+                                                *Validar esta foto @Html.RadioButtonFor(m => m.estado_imagen, 1, new { onClick = "ValidarFoto()" })
+                                            </div>
+
+                                        </div>
+                                        <div id="contenido_info2_elefante">
+                                            <div id="aprobar_o_reprobar_radio">
+                                                *Rechazar esta foto @Html.RadioButtonFor(m => m.estado_imagen, 2, new { onClick = "ValidarFoto()" })
+                                            </div>
+
+                                        </div>
+
+                                        @Html.ValidationMessageFor(model => model.estado_imagen)
+                                    </div>
+                                </div>
+
+                                <div class="no_aprobado">
+                                    <div id="contenido_info3_elefante">
+                                        <h5>Rechazo</h5>
+                                        <div class="editor-field">
+                                            @Html.DropDownList("id_stra_razon_rechazo", "Razón de Rechazo")
+                                            @Html.ValidationMessageFor(model => model.id_stra_razon_rechazo)
+                                        </div>
+                                    </div>
+                                    <div id="contenido_info3_elefante">
+                                        <h5>Otra razón de rechazo</h5>
+                                        <div class="editor-field">
+                                            @Html.TextAreaFor(model => model.comentario_rechazo, new {TextBoxMode = "MultiLine", Columns = "55px", Rows = "3px",  style = "width: 350px", @maxlength = "99" })
+                                            @Html.ValidationMessageFor(model => model.comentario_rechazo)
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div id="botones_aprobacion_no_aprobacion">
+                        <input type="submit" value="Publicar" />
+                        <input type="submit" name="Rechazar" value="No Publicar" />
+                    </div>
+                    if (Session["Redireccionar"] == "1")
+                    { @Html.ActionLink("Regresar", "Index", "Home")
+                    }
+                    else
+                    { @Html.ActionLink("Regresar", "ElefantesMap", "Elefantes", new {Id = Session["Redireccionar"] }, null)}
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<div id="dialogo-aprobacion" title="Mensaje de Validación" style="display: none;">
+    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Para publicar el reporte debe validar el título, la entidad responsable, el porque es un elefante y la foto principal. </p>
+</div>
+
+<div id="dialogo-rechazo" title="Mensaje de Validación" style="display: none;">
+    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Para no publicar el reporte es necesario rechazar por lo menos uno de los siguientes datos: titulo, entidad responsable, porque es un reporte y/o la foto.  Además, debe escoger la razón de rechazo.  Si escoge otra razón de rechazo es obligatorio diligenciar el campo "Otra razón de rechazo".</p>
+</div>
+
+<div id="dialogo-costo" title="Mensaje de Validación" style="display: none;">
+    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>No puede validar/rechazar el costo porque se encuentra vacío. </p>
+</div>
+
+<div id="dialogo-tiempo" title="Mensaje de Validación" style="display: none;">
+    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>No puede validar/rechazar el rango de tiempo porque se encuentra vacío. </p>
+</div>
+
+<div id="dialogo-contratista" title="Mensaje de Validación" style="display: none;">
+    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>No puede validar/rechazar el contratista porque se encuentra vacío. </p>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

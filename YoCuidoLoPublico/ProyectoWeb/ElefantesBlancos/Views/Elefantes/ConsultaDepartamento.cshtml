@@ -1,0 +1,132 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+<script>
+    $("#btnCreate").click(function () {
+        if (($('#MunicipioSelector').val() == '') || ($('#MunicipioSelector').val() == '0')) {
+            $("#dialogo-aprobacion").dialog({
+                resizable: false,
+                height: 240,
+                modal: false,
+                buttons: {
+                    "Aceptar": function () {
+                        $(this).dialog("close");
+
+                        return true;
+                    }
+
+                }
+            });
+            return false;
+        }
+        else {
+
+            return true;
+
+        }
+    });
+</script>
+<script type="text/javascript">
+    //Departamento
+    $('#DepartamentoSelector').click();
+    $(document).ready(function () {
+        var selectedDep = $('#DepartamentoSelector').val();
+        if (selectedDep != null && selectedDep != '') {
+            $.getJSON('@Url.Action("GetMunicipio")', { departamento: selectedDep }, function (data) {
+                var items = '';
+                $.each(data, function (i, municipio) {
+                    items += "<option value='" + municipio.value + "'>" + municipio.text + "</option>";
+
+                });
+                $('#MunicipioSelector').empty();
+                $('#MunicipioSelector').html(items);
+                $('#MunicipioSelector').click();
+                $('#MunicipioSelector').val('@ViewBag.MunicipioSelector');
+
+            });
+
+        }
+        $('#DepartamentoSelector').change(function () {
+            var selectedDep = $(this).val();
+            if (selectedDep != null && selectedDep != '') {
+                $.getJSON('@Url.Action("GetMunicipio")', { departamento: selectedDep }, function (data) {
+                    var items = '';
+                    $.each(data, function (i, municipio) {
+                        items += "<option value='" + municipio.value + "'>" + municipio.text + "</option>";
+
+                    });
+
+                    $('#MunicipioSelector').empty();
+                    $('#MunicipioSelector').html(items);
+                    $('#MunicipioSelector').click();
+                    $('#MunicipioSelector').val('0');
+                });
+
+
+            }
+        });
+
+    });
+
+
+    //Municipio
+    $('#MunicipioSelector').click();
+    $(document).ready(function () {
+        var selectedMun = $('#MunicipioSelector').val();
+
+        $('#MunicipioSelector').change(function () {
+            var selectedMun = $(this).val();
+            if (selectedMun != null && selectedMun != '') {
+                $.getJSON('@Url.Action("GetDepartamentoPorMunicipio")', { municipio: selectedMun }, function (data) {
+                   $('#DepartamentoSelector').val(data);
+
+               });
+
+
+           }
+
+
+       });
+
+   });
+
+
+</script>
+@using (Html.BeginForm())
+{
+    <div id="agregar_parametro">
+        <div class="titulo_elefantes">
+            <h1>Reportes</h1>
+        </div>
+        <h2>&nbsp;</h2>
+        <h2>&nbsp;</h2>
+        <h2>Región @ViewBag.nombreregion</h2>
+        <hr />
+        <div class="contenido_acceso">
+            <div>
+               
+                  *@Html.DropDownList("DepartamentoSelector", (SelectList)ViewBag.departamentos, "Departamento")
+             
+            </div>
+
+            <div>
+               
+                  *@Html.DropDownList("MunicipioSelector", (SelectList)ViewBag.municipios, "Municipio")
+              
+            </div>
+            <div align="center">
+                <input type="submit" value="Buscar" id="btnCreate" />
+            </div>
+        </div>
+    </div> 
+    <div id="dialogo-aprobacion" title="Mensaje de Validación" style="display: none;">
+        <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>El departamento y municipio son obligatorios </p>
+    </div>
+    
+}
