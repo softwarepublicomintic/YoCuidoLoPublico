@@ -1,6 +1,0 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
-	
-	<item android:id="@+id/id_guide" android:title="@string/como_usar" />
-	<item android:id="@+id/id_legal" android:title="@string/aviso_legal" />
-	<item android:id="@+id/id_about" android:title="@string/sobre_esta_aplicacion" />
-</menu>
